@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
 import { ImagesSlider } from "@/components/ui/images-slider";
-
+import img1 from "@/assets/s1.jpg";
+import img2 from "@/assets/s2.jpg";
+import img3 from "@/assets/s3.jpg";
 export default function Slider() {
-  const images = [
-    "https://img.freepik.com/free-photo/estate-highway-road-architecture-transportation_1127-2788.jpg?t=st=1713374729~exp=1713378329~hmac=9c24bc4609d0417d8e8612cfc874228867a89bbc504615c477fb4d575816e267&w=2000",
-    "https://img.freepik.com/free-photo/top-view-old-tanker-that-ran-aground-overturned-shore-near-coast_1153-7297.jpg?t=st=1713374784~exp=1713378384~hmac=d6d6a3c111231c8fea552793163b66ae8f60f2c0a64cd6a26f272a0859c76ecd&w=2000",
-    "https://img.freepik.com/free-photo/shanghai-lujiazui_1127-3132.jpg?t=st=1713374817~exp=1713378417~hmac=38d52c0e59288dcaaeff6d69c52a78c6185cbeed7493751c7e7e580fdd87a3e0&w=2000",
-  ];
+  const images = [img1, img2, img3];
   return (
     <ImagesSlider className="h-screen" images={images}>
       <motion.div
