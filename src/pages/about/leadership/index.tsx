@@ -1,13 +1,8 @@
-"use client";
-
 import Zone from "../../../assets/zone1.jpg";
 
-import dynamic from "next/dynamic";
-
-const LeadershipTeamSection = dynamic(() => import("@/components/about/LeadershipTeamSection"));
-const HeroBanner = dynamic(() => import("@/components/common/Banner/HeroBanner"));
-const BusinessPromotionBanner = dynamic(() => import("@/components/common/BusinessPromotionBanner"));
-
+import LeadershipTeamSection from "@/components/about/LeadershipTeamSection";
+import HeroBanner from "@/components/common/Banner/HeroBanner";
+import BusinessPromotionBanner from "@/components/common/BusinessPromotionBanner";
 const page = () => {
   return (
     <>

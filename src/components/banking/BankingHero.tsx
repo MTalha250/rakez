@@ -2,8 +2,6 @@ import container from "@/assets/container.jpg";
 import Flag from "@/assets/flag.jpg";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import React from "react";
 import Select from "react-select";
 
 const BankingHero = () => {
@@ -13,11 +11,9 @@ const BankingHero = () => {
       <div className="">
         <div className="">
           <div className="w-full h-full absolute">
-            <Image
-              src={container.src}
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
+            <img
+              src={container}
+              className="object-cover w-full h-full"
               alt="no-image"
             />
           </div>
@@ -80,11 +76,9 @@ const BankingHero = () => {
                       <label className="input input-bordered flex items-center gap-2">
                         <div className="border-r pr-3 flex items-center gap-1">
                           <div className="w-[20px] h-[20px] relative">
-                            <Image
-                              src={Flag.src}
-                              layout="fill"
-                              objectFit="cover"
-                              objectPosition="center"
+                            <img
+                              src={Flag}
+                              className="object-cover w-full h-full"
                               alt="no-image"
                             />
                           </div>
@@ -106,7 +100,7 @@ const BankingHero = () => {
                         ]}
                         placeholder="Select a service required"
                         styles={{
-                          control: (baseStyles, state) => ({
+                          control: (baseStyles) => ({
                             ...baseStyles,
                             height: "50px",
                           }),

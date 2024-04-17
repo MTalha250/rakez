@@ -1,5 +1,4 @@
-import React, { FC, ReactNode } from "react";
-import { FaMapLocationDot } from "react-icons/fa6";
+import { FC, ReactNode } from "react";
 
 interface ContactInfoDetailsProps {
   icon: ReactNode;

@@ -1,8 +1,6 @@
-import Person from "@/assets/artist-white.jpg"
-import { variants } from '@/constants'
-import { motion } from "framer-motion"
-import Image from "next/image"
-import React from 'react'
+import Person from "@/assets/artist-white.jpg";
+import { variants } from "@/constants";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -13,17 +11,17 @@ const Hero = () => {
         className="absolute h-[60vh] md:h-[70vh] lg:h-[80vh] w-full object-cover"
       /> */}
       <div className="h-[60vh] md:h-[70vh] lg:h-[80vh] w-full absolute">
-          <Image
-            src={Person.src}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            alt="no-image"
-          />
-        </div>
+        <img
+          src={Person}
+          className="h-full w-full object-cover"
+          alt="no-image"
+        />
+      </div>
       {/* Overlay of hero section */}
       <div className="absolute w-full h-[60vh] md:h-[70vh] lg:h-[80vh] bg-gradient-to-b from-black/50 to-secondary md:rounded-tr-[300px]"></div>
-      <div className={`flex flex-col relative h-full justify-center items-center`}>
+      <div
+        className={`flex flex-col relative h-full justify-center items-center`}
+      >
         {/* Content of hero */}
         <div className="container max-w-3xl ">
           <motion.div
@@ -55,7 +53,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -1,7 +1,6 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import { Switch } from "@/components/ui/switch";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { FaCheck } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
 import { motion } from "framer-motion";
@@ -88,7 +87,7 @@ const Plan = () => {
             <span className="font-bold text-5xl">$0</span> / Month
           </h1>
           <Link
-            href=""
+            to=""
             className="transition duration-300 group-hover:bg-secondary group-hover:text-white w-full block text-center rounded-full border-2 border-secondary py-3"
           >
             Get Started
@@ -126,7 +125,7 @@ const Plan = () => {
             / Month
           </h1>
           <Link
-            href=""
+            to=""
             className="transition duration-300  group-hover:bg-secondary group-hover:text-white w-full block text-center rounded-full border-2 border-secondary py-3"
           >
             Get Started
@@ -167,7 +166,7 @@ const Plan = () => {
             / Month
           </h1>
           <Link
-            href=""
+            to=""
             className="transition duration-300  group-hover:bg-secondary group-hover:text-white w-full block text-center rounded-full border-2 border-secondary py-3"
           >
             Get Started

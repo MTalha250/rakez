@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import GetInTouchModal from "./GetInTouchModal";
 import Slider from "./Slider";

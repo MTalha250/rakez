@@ -1,4 +1,3 @@
-import React from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 const WhatsApp = () => {

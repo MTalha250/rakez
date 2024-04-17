@@ -1,4 +1,3 @@
-import React from "react";
 import ContainerWrapper from "../common/ContainerWrapper";
 import NormalParagraph from "../common/Paragraphs/Paragraphs";
 

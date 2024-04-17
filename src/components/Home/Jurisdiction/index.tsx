@@ -1,7 +1,7 @@
 import img1 from "@/assets/jr1.jpeg";
 import img2 from "@/assets/jr2.jpeg";
 import img3 from "@/assets/jr3.jpeg";
-import React from "react";
+
 const Jurisdiction = () => {
   return (
     <div>
@@ -12,7 +12,7 @@ const Jurisdiction = () => {
         <div className="w-full group">
           <div className="w-full h-full relative">
             <img
-              src={img1.src}
+              src={img1}
               alt=""
               className="absolute top-0 w-full h-full object-cover"
             />
@@ -29,11 +29,11 @@ const Jurisdiction = () => {
         </div>
 
         <div className="w-full relative group">
-          <img src={img2.src} alt="" className="w-full h-full object-cover" />
+          <img src={img2} alt="" className="w-full h-full object-cover" />
           <div className="bg-white absolute top-0 left-0 w-full h-full scale-y-0 group-hover:scale-y-100 origin-bottom trasition duration-300"></div>
         </div>
         <div className="w-full relative group">
-          <img src={img3.src} alt="" className="w-full h-full object-cover" />
+          <img src={img3} alt="" className="w-full h-full object-cover" />
           <div className="bg-white absolute top-0 left-0 w-full h-full scale-y-0 group-hover:scale-y-100 origin-bottom trasition duration-300"></div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import { GiDividedSquare } from "react-icons/gi";
 import ContainerWrapper from "../common/ContainerWrapper";
 

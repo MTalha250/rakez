@@ -7,7 +7,6 @@ import {
 } from "@/components/common/Statistics";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import React from "react";
 import { FaBuilding, FaCity, FaMapMarkedAlt } from "react-icons/fa";
 import { LiaIndustrySolid } from "react-icons/lia";
 

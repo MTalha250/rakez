@@ -1,9 +1,3 @@
-"use client";
-import line from "@/assets/line.svg";
-import img1 from "@/assets/s1.png";
-import img2 from "@/assets/s2.png";
-import img3 from "@/assets/s3.png";
-import img4 from "@/assets/s4.png";
 import {
   Carousel,
   CarouselContent,
@@ -13,9 +7,6 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 const variants = {
   initial: {
     y: 100,
@@ -31,32 +22,6 @@ const variants = {
   },
 };
 
-const services = [
-  {
-    title: "Blog Writing",
-    description:
-      "Dive into the world of impactful storytelling with our blog writing services. Our team of expert writers is adept at creating engaging, informative, and SEO-friendly content that resonates with your audience. From industry-specific articles to general interest blogs, we ensure your voice is heard.",
-    img: img1.src,
-  },
-  {
-    title: "BLOG SCHEDULING",
-    description:
-      "Stay ahead in the game with our seamless blog scheduling solutions. We understand the importance of consistency in content creation. Our strategic scheduling ensures your blog stays fresh, relevant, and continually engaging, keeping your audience hooked and coming back for more.",
-    img: img2.src,
-  },
-  {
-    title: "SOCIAL MEDIA AUTOMATION",
-    description:
-      "Embrace the future with our social media automation services. We streamline your social media management, ensuring consistent and timely posting across all platforms. Our tools and expertise in automation let you connect with your audience efficiently, enhancing engagement and brand presence.",
-    img: img3.src,
-  },
-  {
-    title: "SEARCH ENGINE OPTIMIZATION",
-    description:
-      "Elevate your online visibility with our specialized SEO services. We employ the latest techniques and tools to enhance your website’s ranking on search engines. By optimizing your content and structure, we drive more organic traffic to your site, increasing leads and conversions.",
-    img: img4.src,
-  },
-];
 
 const Services = () => {
   return (

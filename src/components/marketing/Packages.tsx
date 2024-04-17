@@ -6,11 +6,8 @@ import media from "@/assets/media.jpg";
 import socialMedia from "@/assets/socialMedia.jpg";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import React from "react";
-import { FaCheckCircle } from "react-icons/fa";
-import { GiDividedSquare } from "react-icons/gi";
 import ContainerWrapper from "../common/ContainerWrapper";
+import { GiDividedSquare } from "react-icons/gi";
 
 const Packages = () => {
   return (
@@ -92,13 +89,10 @@ const Packages = () => {
               <div className="flex-1">
                 <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
                   <div className="w-full rounded-tl-[100px] rounded-br-[100px] h-full relative">
-                    <Image
-                      src={Branding.src}
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
+                    <img
+                      src={Branding}
                       alt="no-image"
-                      className="rounded-tl-[100px] rounded-br-[100px]"
+                      className="rounded-tl-[100px] rounded-br-[100px] object-cover w-full h-full"
                     />
                   </div>
                 </div>
@@ -155,13 +149,10 @@ const Packages = () => {
             <div className="flex-1">
               <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
                 <div className="w-full rounded-tl-[100px] rounded-br-[100px] h-full relative">
-                  <Image
-                    src={developer.src}
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
+                  <img
+                    src={developer}
                     alt="no-image"
-                    className="rounded-tl-[100px] rounded-br-[100px]"
+                    className="rounded-tl-[100px] rounded-br-[100px] object-cover w-full h-full"
                   />
                 </div>
               </div>
@@ -232,13 +223,10 @@ const Packages = () => {
               <div className="flex-1">
                 <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
                   <div className="w-full rounded-tl-[100px] rounded-br-[100px] h-full relative">
-                    <Image
-                      src={digital.src}
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
+                    <img
+                      src={digital}
                       alt="no-image"
-                      className="rounded-tl-[100px] rounded-br-[100px]"
+                      className="rounded-tl-[100px] rounded-br-[100px] object-cover w-full h-full"
                     />
                   </div>
                 </div>
@@ -301,13 +289,10 @@ const Packages = () => {
             <div className="flex-1">
               <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
                 <div className="w-full rounded-tl-[100px] rounded-br-[100px] h-full relative">
-                  <Image
-                    src={socialMedia.src}
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
+                  <img
+                    src={socialMedia}
                     alt="no-image"
-                    className="rounded-tl-[100px] rounded-br-[100px]"
+                    className="rounded-tl-[100px] rounded-br-[100px] object-cover w-full h-full"
                   />
                 </div>
               </div>
@@ -359,13 +344,9 @@ const Packages = () => {
               <div className="flex-1">
                 <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
                   <div className="w-full rounded-tl-[100px] rounded-br-[100px] h-full relative">
-                    <Image
-                      src={media.src}
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
-                      alt="no-image"
-                      className="rounded-tl-[100px] rounded-br-[100px]"
+                    <img
+                      src={media}
+                      className="rounded-tl-[100px] rounded-br-[100px] object-cover w-full h-full"
                     />
                   </div>
                 </div>
@@ -424,13 +405,10 @@ const Packages = () => {
             <div className="flex-1">
               <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
                 <div className="w-full rounded-tl-[100px] rounded-br-[100px] h-full relative">
-                  <Image
-                    src={event.src}
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
+                  <img
+                    src={event}
                     alt="no-image"
-                    className="rounded-tl-[100px] rounded-br-[100px]"
+                    className="rounded-tl-[100px] rounded-br-[100px] object-cover w-full h-full"
                   />
                 </div>
               </div>

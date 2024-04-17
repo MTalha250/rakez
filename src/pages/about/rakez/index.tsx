@@ -1,25 +1,10 @@
-"use client";
-
 import { default as CityHero } from "../../../assets/city.jpg";
 
-import dynamic from "next/dynamic";
-
-const RakezExploreSection = dynamic(
-  () => import("@/components/about/RakezExploreSection")
-);
-const RakezInformationSection = dynamic(
-  () => import("@/components/about/RakezInformationSection")
-);
-const RakezStatisticsSection = dynamic(
-  () => import("@/components/about/RakezStatisticsSection")
-);
-const HeroBanner = dynamic(
-  () => import("@/components/common/Banner/HeroBanner")
-);
-const BusinessPromotionBanner = dynamic(
-  () => import("@/components/common/BusinessPromotionBanner")
-);
-
+import RakezExploreSection from "@/components/about/RakezExploreSection";
+import RakezInformationSection from "@/components/about/RakezInformationSection";
+import RakezStatisticsSection from "@/components/about/RakezStatisticsSection";
+import HeroBanner from "@/components/common/Banner/HeroBanner";
+import BusinessPromotionBanner from "@/components/common/BusinessPromotionBanner";
 const page = () => {
   return (
     <>

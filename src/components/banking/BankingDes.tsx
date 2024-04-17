@@ -1,12 +1,9 @@
 import Money from "@/assets/money.jpg";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 import { GiDividedSquare } from "react-icons/gi";
 import ContainerWrapper from "../common/ContainerWrapper";
 import { Heading1 } from "../common/Headings/Headings";
 import NormalParagraph from "../common/Paragraphs/Paragraphs";
-
+import { Link } from "react-router-dom";
 const BankingDes = () => {
   return (
     <div className="pt-10">
@@ -85,23 +82,20 @@ const BankingDes = () => {
                 clasess="text-left mt-5"
               />
               <div className="flex justify-end">
-                <Link href="/meeting">
-                <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
-                  Get Started
-                </button>
+                <Link to="/meeting">
+                  <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+                    Get Started
+                  </button>
                 </Link>
               </div>
             </div>
             <div className="flex-1">
               <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
                 <div className="w-full rounded-tl-[100px] rounded-br-[100px] h-full relative">
-                  <Image
-                    src={Money.src}
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
+                  <img
+                    src={Money}
                     alt="no-image"
-                    className="rounded-tl-[100px] rounded-br-[100px]"
+                    className="rounded-tl-[100px] rounded-br-[100px] object-cover w-full h-full"
                   />
                 </div>
               </div>

@@ -1,16 +1,9 @@
-"use client";
-
 import City from "../../../assets/city.jpg";
 
-
-import dynamic from "next/dynamic";
-
-
-const RasAlKhaimahCarouselSection = dynamic(() => import("@/components/about/RasAlKhaimahCarouselSection/RasAlKhaimahCarouselSection"));
-const RasAlKhaimahInformationSection = dynamic(() => import("@/components/about/RasAlKhaimahInformationSection"));
-const HeroBanner = dynamic(() => import("@/components/common/Banner/HeroBanner"));
-const BusinessPromotionBanner = dynamic(() => import("@/components/common/BusinessPromotionBanner"));
-
+import RasAlKhaimahCarouselSection from "@/components/about/RasAlKhaimahCarouselSection/RasAlKhaimahCarouselSection";
+import RasAlKhaimahInformationSection from "@/components/about/RasAlKhaimahInformationSection";
+import HeroBanner from "@/components/common/Banner/HeroBanner";
+import BusinessPromotionBanner from "@/components/common/BusinessPromotionBanner";
 const page = () => {
   return (
     <>

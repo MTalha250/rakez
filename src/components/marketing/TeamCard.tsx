@@ -1,6 +1,3 @@
-import Image from "next/image";
-import React from "react";
-
 const TeamCard = ({
   name,
   role,
@@ -14,11 +11,9 @@ const TeamCard = ({
     <div className="card bg-base-100 shadow-xl rounded-none rounded-tl-[80px] rounded-br-[80px]">
       <figure>
         <div className="w-full h-[300px] relative">
-          <Image
+          <img
             src={img.src}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
+            className="w-full h-full object-cover"
             alt="no-image"
           />
         </div>

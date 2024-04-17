@@ -1,29 +1,13 @@
-"use client";
-
 import Flag from "@/assets/flag.jpg";
 import marketing from "@/assets/marketing.jpg";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import dynamic from "next/dynamic";
-import Image from "next/image";
-import { FaChevronDown } from "react-icons/fa";
-
-// Dynamic import
-
-const UpperNavbar = dynamic(() => import("@/components/common/UpperNavbar"));
-const HomeUpperNavContent = dynamic(
-  () => import("@/components/common/UpperNavbar/HomeUpperNavContent")
-);
-const MarketingHeroLeft = dynamic(
-  () => import("@/components/marketing/MarketingHeroLeft")
-);
-const MarketingFormRight = dynamic(
-  () => import("@/components/marketing/MarketingFormRight")
-);
-const Packages = dynamic(() => import("@/components/marketing/Packages"));
-const OurTeam = dynamic(() => import("@/components/marketing/OurTeam"));
-const BrandInfo = dynamic(() => import("@/components/marketing/BrandInfo"));
-const ContactBox = dynamic(() => import("@/components/marketing/ContactBox"));
+import UpperNavbar from "@/components/common/UpperNavbar";
+import HomeUpperNavContent from "@/components/common/UpperNavbar/HomeUpperNavContent";
+import Packages from "@/components/marketing/Packages";
+import OurTeam from "@/components/marketing/OurTeam";
+import BrandInfo from "@/components/marketing/BrandInfo";
+import ContactBox from "@/components/marketing/ContactBox";
 
 const Marketing = () => {
   return (
@@ -44,11 +28,9 @@ const Marketing = () => {
       <div className="">
         <div className="">
           <div className="w-full h-[110vh] lg:h-[140vh] absolute">
-            <Image
-              src={marketing.src}
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
+            <img
+              src={marketing}
+              className="w-full h-full object-cover"
               alt="no-image"
             />
           </div>
@@ -129,11 +111,9 @@ const Marketing = () => {
                       <label className="input input-bordered flex items-center gap-2">
                         <div className="border-r pr-3 flex items-center gap-1">
                           <div className="w-[20px] h-[20px] relative">
-                            <Image
-                              src={Flag.src}
-                              layout="fill"
-                              objectFit="cover"
-                              objectPosition="center"
+                            <img
+                              src={Flag}
+                              className="w-full h-full object-cover"
                               alt="no-image"
                             />
                           </div>

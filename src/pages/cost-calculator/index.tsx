@@ -1,17 +1,8 @@
-"use client";
-import dynamic from "next/dynamic";
-
-
 import Cost from "@/assets/cost.jpg";
-// import BussinessSetupCostNow from "@/components/Home/BussinessSetupCostNow";
-// import HeroBanner from "@/components/common/Banner/HeroBanner";
-// import UpperNavbar from "@/components/common/UpperNavbar";
-// import HomeUpperNavContent from "@/components/common/UpperNavbar/HomeUpperNavContent";
-
-const HeroBanner = dynamic(() => import("@/components/common/Banner/HeroBanner"));
-const BussinessSetupCostNow = dynamic(() => import("@/components/Home/BussinessSetupCostNow"));
-const UpperNavbar = dynamic(() => import("@/components/common/UpperNavbar"));
-const HomeUpperNavContent = dynamic(() => import("@/components/common/UpperNavbar/HomeUpperNavContent"));
+import HeroBanner from "@/components/common/Banner/HeroBanner";
+import BussinessSetupCostNow from "@/components/Home/BussinessSetupCostNow";
+import UpperNavbar from "@/components/common/UpperNavbar";
+import HomeUpperNavContent from "@/components/common/UpperNavbar/HomeUpperNavContent";
 
 const page = () => {
   return (

@@ -1,5 +1,3 @@
-"use client";
-
 import UpperNavbar from "@/components/common/UpperNavbar";
 import AboutUpperNavContent from "@/components/common/UpperNavbar/AboutUpperNavContent";
 import Hero from "@/components/Home/Hero";

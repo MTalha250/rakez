@@ -1,31 +1,15 @@
-"use client";
-
 import Flag from "@/assets/flag.jpg";
 import Working from "@/assets/working.jpg";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import dynamic from "next/dynamic";
-import Image from "next/image";
 import { FaChevronDown } from "react-icons/fa";
-
-// Dynamic import
-const AboutDIFC = dynamic(() => import("@/components/DIFC/AboutDIFC"));
-const DIFTContactForm = dynamic(
-  () => import("@/components/DIFC/DIFTContactForm")
-);
-const DIFTHeroLeft = dynamic(() => import("@/components/DIFC/DIFTHeroLeft"));
-const ExploreDIFC = dynamic(() => import("@/components/DIFC/ExploreDIFC"));
-const UpperNavbar = dynamic(() => import("@/components/common/UpperNavbar"));
-const HomeUpperNavContent = dynamic(
-  () => import("@/components/common/UpperNavbar/HomeUpperNavContent")
-);
-const DIFCBusinessActivities = dynamic(
-  () => import("@/components/DIFC/DIFCBusinessActivities")
-);
-const DIFCRequirements = dynamic(
-  () => import("@/components/DIFC/DIFCRequirements")
-);
-const FAQ = dynamic(() => import("@/components/Home/faq_new/FAQ"));
+import AboutDIFC from "@/components/DIFC/AboutDIFC";
+import ExploreDIFC from "@/components/DIFC/ExploreDIFC";
+import DIFCRequirements from "@/components/DIFC/DIFCRequirements";
+import DIFCBusinessActivities from "@/components/DIFC/DIFCBusinessActivities";
+import FAQ from "@/components/Home/faq_new/FAQ";
+import UpperNavbar from "@/components/common/UpperNavbar";
+import HomeUpperNavContent from "@/components/common/UpperNavbar/HomeUpperNavContent";
 
 const DIFC = () => {
   return (
@@ -38,11 +22,9 @@ const DIFC = () => {
       <div className="">
         <div className="">
           <div className="w-full h-full absolute">
-            <Image
-              src={Working.src}
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
+            <img
+              src={Working}
+              className="w-full h-full object-cover"
               alt="no-image"
             />
           </div>
@@ -110,11 +92,9 @@ const DIFC = () => {
                       <label className="input input-bordered flex items-center gap-2">
                         <div className="border-r pr-3 flex items-center gap-1">
                           <div className="w-[20px] h-[20px] relative">
-                            <Image
-                              src={Flag.src}
-                              layout="fill"
-                              objectFit="cover"
-                              objectPosition="center"
+                            <img
+                              src={Flag}
+                              className="w-full h-full object-cover"
                               alt="no-image"
                             />
                           </div>

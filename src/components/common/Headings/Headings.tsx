@@ -1,6 +1,3 @@
-import { variants } from "@/constants";
-import { motion } from "framer-motion";
-
 export const Heading1 = ({
   classes,
   title,

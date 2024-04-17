@@ -1,25 +1,14 @@
-import Man from "@/assets/man.jpg";
-import Man1 from "@/assets/man1.jpg";
 import FeaturedContentCard from "@/components/common/FeaturedZoneContentCard";
 import { Heading1 } from "@/components/common/Headings/Headings";
 import NormalParagraph from "@/components/common/Paragraphs/Paragraphs";
-import PersonPortfolioCard from "@/components/common/PersonPortfolioCard";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import React from "react";
-
-import Animal from "@/assets/animal1.jpg";
-import Book from "@/assets/book.png";
-import City from "@/assets/city.jpg";
-import FAQ from "@/assets/faq.png";
-import Home from "@/assets/home.jpg";
 import Space1 from "@/assets/space1.jpg";
 import Space2 from "@/assets/space2.jpg";
 import Space3 from "@/assets/space3.jpg";
 import Space4 from "@/assets/space4.jpg";
 import Space5 from "@/assets/space5.jpg";
 import Space6 from "@/assets/space6.jpg";
-import Worker from "@/assets/worker.jpg";
 import ContainerWrapper from "@/components/common/ContainerWrapper";
 
 const FacilitiesOverviewSection = () => {

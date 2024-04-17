@@ -1,8 +1,5 @@
-"use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { PiArrowRightThin } from "react-icons/pi";
 const variants = {
   initial: {
@@ -52,7 +49,7 @@ const About = () => {
           amplify your digital footprint, efficiently and effectively.
           <motion.span variants={variants}>
             <Link
-              href=""
+              to=""
               className="mt-5 group w-fit hover:bg-[#66DC8D] hover:text-black py-1 px-5 rounded-full transition duration-300 items-center space-x-3 font-bold font-bask bg-secondary text-white flex"
             >
               <span>Join Us</span>

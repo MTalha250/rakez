@@ -1,14 +1,5 @@
-"use client";
-
-import dynamic from "next/dynamic";
-
-const HeroBanner = dynamic(
-  () => import("@/components/common/Banner/HeroBanner")
-);
-const BusinessSteps = dynamic(
-  () => import("@/components/setupBusiness/BusinessSteps")
-);
-
+import HeroBanner from "@/components/common/Banner/HeroBanner";
+import BusinessSteps from "@/components/setupBusiness/BusinessSteps";
 import business1 from "@/assets/business1.jpg";
 
 const page = () => {
@@ -21,7 +12,6 @@ const page = () => {
       />
 
       <BusinessSteps />
-
     </>
   );
 };

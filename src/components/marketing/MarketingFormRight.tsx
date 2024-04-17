@@ -1,14 +1,14 @@
 import Flag from "@/assets/flag.jpg";
 import logo from "@/assets/logo.png";
-import Image from "next/image";
-import React from "react";
 
 const MarketingFormRight = () => {
   return (
     <div className="bg-c_blue px-10 pb-10 pt-10 md:pt-40 h-full">
       <div className="flex justify-center items-center gap-5 mb-5">
-        <Image src={logo} width={40} alt="SCC House Logo" />
-        <h3 className="font-bold text-[30px] text-center text-green">SCC House</h3>
+        <img src={logo} width={40} alt="SCC House Logo" />
+        <h3 className="font-bold text-[30px] text-center text-green">
+          SCC House
+        </h3>
       </div>
 
       <h2 className="font-bold text-[30px] text-center capitalize">
@@ -34,11 +34,9 @@ const MarketingFormRight = () => {
           <label className="input input-bordered flex items-center gap-2">
             <div className="border-r pr-3 flex items-center gap-1">
               <div className="w-[20px] h-[20px] relative">
-                <Image
-                  src={Flag.src}
-                  layout="fill"
-                  objectFit="cover"
-                  objectPosition="center"
+                <img
+                  src={Flag}
+                  className="w-full h-full object-cover"
                   alt="no-image"
                 />
               </div>

@@ -1,21 +1,13 @@
-import { variants } from "@/constants";
-import { motion } from "framer-motion";
-import React from "react";
-import { FaChevronDown } from "react-icons/fa";
-
 import Working from "@/assets/marketing.jpg";
-import Image from "next/image";
 
 const MarketingHeroLeft = () => {
   return (
     <div className={`md:min-h-[70vh] w-full `}>
       <div className="h-[110vh] md:h-full relative ">
         <div className="w-full h-full absolute">
-          <Image
-            src={Working.src}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
+          <img
+            src={Working}
+            className="h-full w-full object-cover"
             alt="no-image"
           />
         </div>
@@ -50,7 +42,9 @@ const MarketingHeroLeft = () => {
                 journey, from strategizing and planning to execution.
               </p>
 
-              <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">Get Started</button>
+              <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+                Get Started
+              </button>
             </div>
           </div>
         </div>

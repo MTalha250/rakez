@@ -1,11 +1,5 @@
-"use client";
-import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
-import { EffectCards, Navigation } from "swiper/modules";
-import { PiArrowRightThin } from "react-icons/pi";
-import { PiArrowLeftThin } from "react-icons/pi";
 import {
   Accordion,
   AccordionContent,
@@ -100,8 +94,8 @@ const Faq = () => {
         className="font-extralight text-center my-10"
       >
         We've put together a comprehensive list of commonly asked questions to
-        provide you with more insights into SCC House and the range of services we
-        offer. Should you require further clarification or have additional
+        provide you with more insights into SCC House and the range of services
+        we offer. Should you require further clarification or have additional
         inquiries, please don't hesitate to reach out to us. Our team is readily
         available to assist you and ensure you have all the information you
         need.
@@ -111,12 +105,7 @@ const Faq = () => {
         className="flex flex-col md:flex-row w-full"
       >
         <div className="md:w-1/2 pr-5 md:pr-10">
-          <motion.img
-            variants={variants}
-            src={img.src}
-            alt=""
-            className="p-10"
-          />
+          <motion.img variants={variants} src={img} alt="" className="p-10" />
         </div>
         <motion.div variants={variants} className="md:w-1/2">
           <Accordion type="single" collapsible className="w-full">

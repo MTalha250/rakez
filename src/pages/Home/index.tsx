@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useState } from "react";
 import Hero from "@/components/Home/Hero";
 import Ecosystem from "@/components/ecosystem";

@@ -1,6 +1,4 @@
-import React, { FC, ReactNode } from "react";
-import { FaBuilding } from "react-icons/fa";
-import { Heading1, Heading3 } from "../Headings/Headings";
+import { FC, ReactNode } from "react";
 import NormalParagraph from "../Paragraphs/Paragraphs";
 
 interface StatisticsProps {

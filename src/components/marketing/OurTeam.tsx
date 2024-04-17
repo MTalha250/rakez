@@ -1,6 +1,4 @@
-import React from "react";
 import ContainerWrapper from "../common/ContainerWrapper";
-import { Heading1 } from "../common/Headings/Headings";
 import TeamCard from "./TeamCard";
 
 import Person1 from "@/assets/person1.jpg";

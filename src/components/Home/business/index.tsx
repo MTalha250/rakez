@@ -1,7 +1,5 @@
-"use client";
-import Link from "next/link";
-import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const variants = {
   initial: {
     y: 100,
@@ -58,7 +56,7 @@ const Business = () => {
         </motion.p>
         <motion.span variants={variants}>
           <Link
-            href="/contact"
+            to="/contact"
             className="transition duration-300 hover:bg-[#66DC8D] hover:text-black font-bold px-5 py-3 text-base rounded-xl text-white bg-secondary shadow my-5 inline-block shadow-black/30"
           >
             Get a demo

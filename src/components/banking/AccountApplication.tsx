@@ -1,12 +1,9 @@
-import Image from "next/image";
-import React from "react";
-import { GiDividedSquare } from "react-icons/gi";
 import ContainerWrapper from "../common/ContainerWrapper";
 import { Heading1 } from "../common/Headings/Headings";
 import NormalParagraph from "../common/Paragraphs/Paragraphs";
 
 import partners from "@/assets/partners.png";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 const AccountApplication = () => {
   return (
@@ -60,7 +57,7 @@ const AccountApplication = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <Link href="/meeting">
+            <Link to="/meeting">
               <button className="btn  bg-orange-500 border-none mt-10 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
                 Apply Now
               </button>
@@ -76,13 +73,10 @@ const AccountApplication = () => {
 
           <div className="h-[80vh] w-full]">
             <div className="w-full rounded-tl-[100px] rounded-br-[100px] h-full relative">
-              <Image
-                src={partners.src}
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
+              <img
+                src={partners}
                 alt="no-image"
-                className="rounded-tl-[100px] rounded-br-[100px]"
+                className="rounded-tl-[100px] rounded-br-[100px] object-cover object-center h-full w-full"
               />
             </div>
           </div>
@@ -90,7 +84,10 @@ const AccountApplication = () => {
       </div>
 
       <ContainerWrapper classes="pt-14 md:pt-24">
-        <Heading1 title="Note By @Serv Corps Companies House" classes="text-center" />
+        <Heading1
+          title="Note By @Serv Corps Companies House"
+          classes="text-center"
+        />
 
         <NormalParagraph text="All business licenses are inclusive of a shared desk facility, located inside The Meydan Hotel." />
         <NormalParagraph text="All Prices are inclusive of 5% VAT and government charges." />

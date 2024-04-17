@@ -1,5 +1,4 @@
-import React from "react";
-import { FaPhone, FaQuestionCircle } from "react-icons/fa";
+import { FaPhone} from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 
 const AboutUpperNavContent = () => {

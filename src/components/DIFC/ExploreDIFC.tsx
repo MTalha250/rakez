@@ -1,18 +1,15 @@
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import React from "react";
 import { FaCcVisa } from "react-icons/fa";
 import { ImAddressBook } from "react-icons/im";
 import { IoIosPricetags } from "react-icons/io";
 import { LiaDigitalOcean } from "react-icons/lia";
 import { SiArkecosystem } from "react-icons/si";
 import { TbLicense } from "react-icons/tb";
-import StatsNumbers from "../Home/Stats/StatsNumbers";
 import ContainerWrapper from "../common/ContainerWrapper";
 import ExploreCards from "./ExploreCards";
 
 import Img1 from "@/assets/img1.webp";
-import Image from "next/image";
 
 const ExploreDIFC = () => {
   return (
@@ -26,11 +23,9 @@ const ExploreDIFC = () => {
       /> */}
 
       <div className="w-full h-full absolute">
-        <Image
-          src={Img1.src}
-          layout="fill"
-          objectFit="cover"
-          // objectPosition="center"
+        <img
+          src={Img1}
+          className="h-full w-full object-cover"
           alt="no-image"
         />
       </div>

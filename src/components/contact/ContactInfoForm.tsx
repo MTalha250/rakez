@@ -1,4 +1,3 @@
-import React from "react";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { MdAttachEmail, MdWifiCalling3 } from "react-icons/md";
 import ContainerWrapper from "../common/ContainerWrapper";

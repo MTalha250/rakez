@@ -7,13 +7,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
-import React from "react";
-import Animal from "../../../assets/animal1.jpg";
 import City1 from "../../../assets/city1.jpg";
 import City2 from "../../../assets/city2.jpg";
 import City3 from "../../../assets/city3.jpg";
-import Home from "../../../assets/home.jpg";
 
 const RasAlKhaimahCarouselSection = () => {
   return (
@@ -37,11 +33,9 @@ const RasAlKhaimahCarouselSection = () => {
                     className="object-cover w-full h-full"
                   /> */}
                   <div className="w-full h-full relative">
-                    <Image
-                      src={City1.src}
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
+                    <img
+                      src={City1}
+                      className="object-cover w-full h-full"
                       alt="no-image"
                     />
                   </div>
@@ -55,11 +49,9 @@ const RasAlKhaimahCarouselSection = () => {
                     className="object-cover w-full h-full"
                   /> */}
                   <div className="w-full h-full relative">
-                    <Image
-                      src={City2.src}
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
+                    <img
+                      src={City2}
+                      className="object-cover w-full h-full"
                       alt="no-image"
                     />
                   </div>
@@ -73,11 +65,9 @@ const RasAlKhaimahCarouselSection = () => {
                     className="object-cover w-full h-full"
                   /> */}
                   <div className="w-full h-full relative">
-                    <Image
-                      src={City3.src}
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
+                    <img
+                      src={City3}
+                      className="object-cover w-full h-full"
                       alt="no-image"
                     />
                   </div>

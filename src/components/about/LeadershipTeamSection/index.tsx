@@ -6,7 +6,6 @@ import NormalParagraph from "@/components/common/Paragraphs/Paragraphs";
 import PersonPortfolioCard from "@/components/common/PersonPortfolioCard";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import React from "react";
 
 const LeadershipTeamSection = () => {
   return (

@@ -1,10 +1,7 @@
 import Business from "@/assets/business.jpg";
 import Money from "@/assets/money.jpg";
-import Link from "next/link";
-import React from "react";
 import { TiTick } from "react-icons/ti";
 import ContainerWrapper from "../common/ContainerWrapper";
-import FeaturedContentCard from "../common/FeaturedZoneContentCard";
 import { Heading1, Heading3 } from "../common/Headings/Headings";
 import {
   Carousel,

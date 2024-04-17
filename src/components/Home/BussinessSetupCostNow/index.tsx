@@ -1,8 +1,6 @@
 import ContainerWrapper from "@/components/common/ContainerWrapper";
-import { Heading1 } from "@/components/common/Headings/Headings";
 import { Button } from "@/components/ui/button";
-import { BookmarkIcon, MoveRight } from "lucide-react";
-import React from "react";
+import { MoveRight } from "lucide-react";
 import Select from "react-select";
 
 const list = [
@@ -75,9 +73,7 @@ const BussinessSetupCostNow = () => {
             </h1>
             <div className="md:mt-5">
               <Select options={options} />
-              <Button
-                className="rounded-tl-[20px] rounded-br-[20px] mt-5"
-              >
+              <Button className="rounded-tl-[20px] rounded-br-[20px] mt-5">
                 Next <MoveRight width="16" height="16" />
               </Button>
             </div>

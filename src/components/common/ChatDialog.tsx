@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
-import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaRocketchat } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -32,7 +32,7 @@ const ChatDialog = () => {
             <div className="rounded-full p-3 md:p-4 h-[50px] w-[50px] md:h-[55px] md:w-[55px] border border-white bg-white flex justify-center items-center  ">
               <FaPhoneAlt className="text-green text-[20px] md:text-[23px]" />
             </div>
-            <Link href="https://wa.me/971521508056" target="_blank">
+            <Link to="https://wa.me/971521508056" target="_blank">
               <div className="rounded-full p-3 md:p-4 h-[50px] w-[50px] md:h-[55px] md:w-[55px] border border-white bg-white flex justify-center items-center ">
                 <IoLogoWhatsapp className="text-green text-[20px] md:text-[23px]" />
               </div>

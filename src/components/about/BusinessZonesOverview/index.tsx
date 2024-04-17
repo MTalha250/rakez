@@ -1,9 +1,3 @@
-import Animal from "@/assets/animal1.jpg";
-import Book from "@/assets/book.png";
-import City from "@/assets/city.jpg";
-import FAQ from "@/assets/faq.png";
-import Home from "@/assets/home.jpg";
-import Worker from "@/assets/worker.jpg";
 import Zone1 from "@/assets/zone1.webp";
 import Zone2 from "@/assets/zone2.jpg";
 import Zone3 from "@/assets/zone3.jpg";
@@ -16,7 +10,6 @@ import { Heading1 } from "@/components/common/Headings/Headings";
 import NormalParagraph from "@/components/common/Paragraphs/Paragraphs";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import React from "react";
 
 const BusinessZonesOverview = () => {
   return (

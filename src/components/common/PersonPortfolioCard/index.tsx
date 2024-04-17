@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FC } from "react";
 
 interface FeaturedContentCardProps {
@@ -21,11 +20,9 @@ const PersonPortfolioCard: FC<FeaturedContentCardProps> = ({
           className="w-full h-full object-cover"
         /> */}
         <div className="w-full h-full relative">
-          <Image
+          <img
             src={image.src}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
+            className="object-cover w-full h-full"
             alt="no-image"
           />
         </div>

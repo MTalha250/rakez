@@ -1,13 +1,12 @@
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import React from "react";
 import Worker from "../../../assets/worker.jpg";
 import { Heading1 } from "../Headings/Headings";
 
 const BusinessPromotionBanner = () => {
   return (
     <div className="h-[60vh] flex flex-col relative">
-      <img src={Worker.src} className="absolute w-full h-full object-cover" />
+      <img src={Worker} className="absolute w-full h-full object-cover" />
       <div className="absolute w-full h-full bg-gradient-to-b from-black/50 to-secondary"></div>
 
       <div className="flex items-center justify-center h-full">
@@ -22,10 +21,10 @@ const BusinessPromotionBanner = () => {
             title="A WORLD-CLASS BUSINESS AND INDUSTRIAL HUB"
             classes="text-center text-white text-2xl max-w-[430px]"
           />
-          
-            <button className="p-2 bg-green rounded text-white z-10">
-              Start Now
-            </button>
+
+          <button className="p-2 bg-green rounded text-white z-10">
+            Start Now
+          </button>
         </motion.div>
       </div>
     </div>

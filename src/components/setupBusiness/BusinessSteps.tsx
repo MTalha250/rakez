@@ -1,6 +1,5 @@
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import React from "react";
 import { TfiWrite } from "react-icons/tfi";
 import ContainerWrapper from "../common/ContainerWrapper";
 import { Heading1 } from "../common/Headings/Headings";

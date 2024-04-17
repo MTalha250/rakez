@@ -2,25 +2,18 @@ import pic from "@/assets/whoWeAreBanner.jpg";
 import ContainerWrapper from "@/components/common/ContainerWrapper";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import React from "react";
 import StatsNumbers from "./StatsNumbers";
 
 const Stats = () => {
   return (
-
-
     <div className={`flex flex-col relative min-h-[75vh] `}>
       {/* <img
         src={pic.src}
         alt="image"
         className="absolute h-full w-full object-cover"
       /> */}
-      <Image
-        src={pic.src}
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
+      <img
+        src={pic}
         alt="no-image"
         className="absolute h-full w-full object-cover"
       />

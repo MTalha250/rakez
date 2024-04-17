@@ -1,4 +1,3 @@
-"use client";
 import { FC } from "react";
 import Select from "react-select";
 
@@ -102,7 +101,7 @@ const GetInTouchModal: FC<IModalProps> = ({ toggle, handleToggle }) => {
                   ]}
                   placeholder="Select a service required"
                   styles={{
-                    control: (baseStyles, state) => ({
+                    control: (baseStyles) => ({
                       ...baseStyles,
                       height: "50px",
                     }),

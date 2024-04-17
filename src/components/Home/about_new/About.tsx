@@ -1,5 +1,4 @@
 import whoWeAreBanner from "@/assets/whoWeAreBanner.jpg";
-import Accordian from "@/components/accordian/Accordian";
 import {
   Accordion,
   AccordionContent,
@@ -7,8 +6,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { aboutUs } from "@/constants";
-import Image from "next/image";
-import React from "react";
 
 const About = () => {
   return (
@@ -34,7 +31,7 @@ const About = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <Image
+          <img
             src={whoWeAreBanner}
             alt="A person explaining something with a laptop near him"
             width={650}

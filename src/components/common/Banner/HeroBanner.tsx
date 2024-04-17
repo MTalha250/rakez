@@ -1,9 +1,6 @@
-import AnimatedCircle from "@/components/AnimatedCircle";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { FC, ReactNode } from "react";
-import { Heading1, Heading3 } from "../Headings/Headings";
 
 interface HeroBannerProps {
   image?: any;
@@ -31,11 +28,8 @@ const HeroBanner: FC<HeroBannerProps> = ({
       {/* <div className="w-full h-full relative"> */}
 
       {image && (
-        <Image
-          src={image.src}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
+        <img
+          src={image}
           alt="no-image"
           className="absolute w-full h-full object-cover"
         />

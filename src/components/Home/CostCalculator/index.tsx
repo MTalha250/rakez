@@ -6,7 +6,7 @@ const CostCalculator = () => {
     <div
       className="py-[250px] w-full relative"
       style={{
-        backgroundImage: `url(${img.src})`,
+        backgroundImage: `url(${img})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

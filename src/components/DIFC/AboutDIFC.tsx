@@ -1,6 +1,5 @@
-import React from "react";
 import ContainerWrapper from "../common/ContainerWrapper";
-import { Heading1, Heading3 } from "../common/Headings/Headings";
+import { Heading1 } from "../common/Headings/Headings";
 
 const AboutDIFC = () => {
   return (
