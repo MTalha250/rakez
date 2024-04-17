@@ -1,0 +1,286 @@
+"use client";
+
+import Flag from "@/assets/flag.jpg";
+import marketing from "@/assets/marketing.jpg";
+import { variants } from "@/constants";
+import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+import Image from "next/image";
+import { FaChevronDown } from "react-icons/fa";
+
+// Dynamic import
+
+const UpperNavbar = dynamic(() => import("@/components/common/UpperNavbar"));
+const HomeUpperNavContent = dynamic(
+  () => import("@/components/common/UpperNavbar/HomeUpperNavContent")
+);
+const MarketingHeroLeft = dynamic(
+  () => import("@/components/marketing/MarketingHeroLeft")
+);
+const MarketingFormRight = dynamic(
+  () => import("@/components/marketing/MarketingFormRight")
+);
+const Packages = dynamic(() => import("@/components/marketing/Packages"));
+const OurTeam = dynamic(() => import("@/components/marketing/OurTeam"));
+const BrandInfo = dynamic(() => import("@/components/marketing/BrandInfo"));
+const ContactBox = dynamic(() => import("@/components/marketing/ContactBox"));
+
+const Marketing = () => {
+  return (
+    <>
+      <UpperNavbar>
+        <HomeUpperNavContent />
+      </UpperNavbar>
+
+      {/* hero section  */}
+      {/* <div className="mb-10">
+        <div className="flex flex-col md:flex-row">
+          <MarketingHeroLeft />
+          <MarketingFormRight />
+        </div>
+      </div> */}
+
+      {/* hero section  */}
+      <div className="">
+        <div className="">
+          <div className="w-full h-[110vh] lg:h-[140vh] absolute">
+            <Image
+              src={marketing.src}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              alt="no-image"
+            />
+          </div>
+
+          {/* Overlay of hero section */}
+          <div className="absolute w-full h-[110vh] lg:h-[140vh] bg-gradient-to-b from-black/50 to-secondary"></div>
+
+          <div className="">
+            <div className="flex flex-col lg:flex-row ">
+              {/* Left */}
+              <div className={`flex flex-col basis-[40%]`}>
+                {/* Content of hero */}
+                <div className="flex justify-start ld:px-10 px-5 mt-10 lg:mt-40">
+                  <motion.div
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    className="flex flex-col h-[100vh] items-center justify-center"
+                  >
+                    <h1
+                      className={`text-3xl sm:text-5xl text-white  font-semibold drop-shadow-2xl mb-5 text-center tracking-tight`}
+                    >
+                      We Offer 360-Degree{" "}
+                      <span className="text-orange-500">
+                        Marketing Support{" "}
+                      </span>
+                      for your Business
+                    </h1>
+
+                    <div className="text-white text-center z-10">
+                      <div className=" ">
+                        Competitive Pricing | Quick Turnaround | Professional
+                        Output
+                      </div>
+
+                      <p className="text-[14px] mt-[40px]">
+                        {" "}
+                        Our team of experts helps define a brand identity for
+                        start-ups and builds a storyline aligned with its
+                        business function. From creating logo designs to
+                        designing full-fledged websites, we provide all the
+                        services necessary to help start-ups launch their brand
+                        from Day 1.
+                      </p>
+
+                      <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+                        Get Started
+                      </button>
+                    </div>
+                  </motion.div>
+                </div>
+              </div>
+
+              {/* Right */}
+              <div className="basis-[60%] mt-10 lg:mt-[250px] lg:z-10">
+                <div className="bg-c_blue px-10 pb-10 pt-10 rounded-md w-[90%] mx-auto">
+                  <h2 className="font-bold text-[30px] text-center capitalize">
+                    ENQUIRE NOW
+                  </h2>
+
+                  <form action="" className="mt-7">
+                    <div className="flex flex-col gap-10">
+                      <input
+                        type="text"
+                        placeholder="Type Full Name"
+                        className="input input-bordered input-md w-full "
+                      />
+                    </div>
+                    <div className="mt-5">
+                      <input
+                        type="text"
+                        placeholder="Type Email"
+                        className="input input-bordered input-md w-full "
+                      />
+                    </div>
+                    <div className="mt-5">
+                      <label className="input input-bordered flex items-center gap-2">
+                        <div className="border-r pr-3 flex items-center gap-1">
+                          <div className="w-[20px] h-[20px] relative">
+                            <Image
+                              src={Flag.src}
+                              layout="fill"
+                              objectFit="cover"
+                              objectPosition="center"
+                              alt="no-image"
+                            />
+                          </div>
+                          +971
+                        </div>
+                        <input
+                          type="text"
+                          className="grow"
+                          placeholder="Phone Number"
+                        />
+                      </label>
+                    </div>
+
+                    <div className="mt-5">
+                      <h3 className="text-[14px] font-bold mb-5">
+                        What Services Can We Assist You With?
+                      </h3>
+
+                      <div className="flex flex-wrap">
+                        <div className="form-control">
+                          <label className="label justify-start gap-3 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="checkbox checkbox-sm"
+                            />
+                            <span className="label-text">
+                              Company Logo and Branding
+                            </span>
+                          </label>
+                        </div>
+                        <div className="form-control">
+                          <label className="label justify-start gap-3 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="checkbox checkbox-sm"
+                            />
+                            <span className="label-text">
+                              Website for my Business
+                            </span>
+                          </label>
+                        </div>
+                        <div className="form-control">
+                          <label className="label justify-start gap-3 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="checkbox checkbox-sm"
+                            />
+                            <span className="label-text">
+                              Rank Top on Google Search
+                            </span>
+                          </label>
+                        </div>
+                        <div className="form-control">
+                          <label className="label justify-start gap-3 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="checkbox checkbox-sm"
+                            />
+                            <span className="label-text">
+                              Generate More Quality Leads
+                            </span>
+                          </label>
+                        </div>
+                        <div className="form-control">
+                          <label className="label justify-start gap-3 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="checkbox checkbox-sm"
+                            />
+                            <span className="label-text">
+                              Manage Social Media Accounts by Regular and
+                              Consistent Posting
+                            </span>
+                          </label>
+                        </div>
+                        <div className="form-control">
+                          <label className="label justify-start gap-3 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="checkbox checkbox-sm"
+                            />
+                            <span className="label-text">
+                              Content Management
+                            </span>
+                          </label>
+                        </div>
+                        <div className="form-control">
+                          <label className="label justify-start gap-3 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="checkbox checkbox-sm"
+                            />
+                            <span className="label-text">
+                              Get Featured on the Media
+                            </span>
+                          </label>
+                        </div>
+                        <div className="form-control">
+                          <label className="label justify-start gap-3 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="checkbox checkbox-sm"
+                            />
+                            <span className="label-text">Event Management</span>
+                          </label>
+                        </div>
+                        <div className="form-control">
+                          <label className="label justify-start gap-3 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="checkbox checkbox-sm"
+                            />
+                            <span className="label-text">Other</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mt-5">
+                      <textarea
+                        className="textarea textarea-bordered w-full h-[160px]"
+                        placeholder="Please share any special instructions for us to analyze your project requirement."
+                      ></textarea>
+                    </div>
+
+                    <div className="mt-5 flex justify-end">
+                      <button className="btn rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white">
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Packages />
+
+      <OurTeam />
+
+      <BrandInfo />
+
+      <ContactBox />
+    </>
+  );
+};
+
+export default Marketing;
