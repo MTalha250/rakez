@@ -1,15 +1,15 @@
 import img from "@/assets/book.png";
 import Team from "@/assets/team.png";
-
+import debounce from "lodash/debounce";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const Booking = () => {
   const [scroll, setScroll] = useState(0);
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = debounce(() => {
       setScroll(window.scrollY);
-    };
+    }, 100);
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
