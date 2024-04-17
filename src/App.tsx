@@ -1,23 +1,23 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
-import Banking from "./pages/banking";
-import Contact from "./pages/contact-us";
-import DIFC from "./pages/DIFC";
-import FAQ from "./pages/faq";
-import Support from "./pages/support";
-import SetupBusiness from "./pages/setupBusiness";
-import Promotions from "./pages/promotions";
-import Meeting from "./pages/meeting";
-import Marketing from "./pages/marketing";
-import CostCalculator from "./pages/cost-calculator";
-import About from "./pages/about";
-import AboutComp from "./pages/about/aboutComp";
-import Facilities from "./pages/about/facilities";
-import Leadership from "./pages/about/leadership";
-import Rakez from "./pages/about/rakez";
-import RasAlKhaimah from "./pages/about/ras-al-khaimah";
-import Zones from "./pages/about/zones";
+// import Banking from "./pages/banking";
+// import Contact from "./pages/contact-us";
+// import DIFC from "./pages/DIFC";
+// import FAQ from "./pages/faq";
+// import Support from "./pages/support";
+// import SetupBusiness from "./pages/setupBusiness";
+// import Promotions from "./pages/promotions";
+// import Meeting from "./pages/meeting";
+// import Marketing from "./pages/marketing";
+// import CostCalculator from "./pages/cost-calculator";
+// import About from "./pages/about";
+// import AboutComp from "./pages/about/aboutComp";
+// import Facilities from "./pages/about/facilities";
+// import Leadership from "./pages/about/leadership";
+// import Rakez from "./pages/about/rakez";
+// import RasAlKhaimah from "./pages/about/ras-al-khaimah";
+// import Zones from "./pages/about/zones";
 const App = () => {
   return (
     <Routes>
