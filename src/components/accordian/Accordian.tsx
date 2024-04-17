@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -22,8 +21,6 @@ const Accordian = ({
   titleStyle,
   descriptionStyle,
 }: Props) => {
-  const [visible, setVisible] = useState<number>(1);
-
   return (
     <>
       <div
@@ -35,7 +32,7 @@ const Accordian = ({
           className={"pt-3" + " " + descriptionStyle}
           variants={variants}
           transition={{ duration: 0.3 }}
-          animate={visible ? "visible" : "initial"}
+          animate="visible"
         >
           {description}
         </motion.p>
