@@ -87,7 +87,7 @@ const Sidebar = () => {
         <svg width="25" height="25" viewBox="0 0 23 23">
           <motion.path
             strokeWidth="3"
-            stroke="green"
+            stroke="#FACF11"
             strokeLinecap="round"
             variants={{
               closed: { d: "M 2 2.5 L 20 2.5" },
@@ -96,7 +96,7 @@ const Sidebar = () => {
           />
           <motion.path
             strokeWidth="3"
-            stroke="green"
+            stroke="#FACF11"
             strokeLinecap="round"
             d="M 2 9.423 L 20 9.423"
             variants={{
@@ -106,7 +106,7 @@ const Sidebar = () => {
           />
           <motion.path
             strokeWidth="3"
-            stroke="green"
+            stroke="#FACF11"
             strokeLinecap="round"
             variants={{
               closed: { d: "M 2 16.346 L 20 16.346" },
