@@ -26,9 +26,6 @@ const page = () => {
 
   return (
     <div className="">
-      {/* <div className="border-2">
-        <Sidebar />
-      </div> */}
       <UpperNavbar>
         <HomeUpperNavContent />
       </UpperNavbar>
@@ -39,7 +36,6 @@ const page = () => {
       <Persons />
 
       <Contact />
-
       {toggle && <CallBackModal toggle={toggle} handleToggle={handleClick} />}
     </div>
   );
