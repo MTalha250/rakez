@@ -35,16 +35,20 @@ const BankingHero = () => {
                     className="flex flex-col h-[85vh] items-center justify-center"
                   >
                     <h1
-                      className={`text-3xl sm:text-5xl text-green font-semibold drop-shadow-2xl mb-5 text-center`}
+                      className={`text-3xl sm:text-5xl text-primary font-semibold drop-shadow-2xl mb-5`}
                     >
                       Banking Solutions in Dubai
                     </h1>
 
                     <h3
-                      className={`mb-5 text-lg md:text-xl font-medium text-neutral-100 text-center z-50`}
+                      className={`mb-5 text-lg md:text-xl font-medium text-neutral-100 z-50`}
                     >
-                      Secure Your Business Future with Exclusive Banking
-                      Solutions in Dubai.
+                      Unlock your business's potential with exclusive banking
+                      solutions in Dubai. Tailored financial products, digital
+                      innovations, and Islamic banking options cater to your
+                      diverse needs. Secure your future with strategic wealth
+                      management and access to government support and capital
+                      markets for seamless expansion.
                     </h3>
                   </motion.div>
                 </div>
@@ -52,7 +56,7 @@ const BankingHero = () => {
 
               {/* Right */}
               <div className="basis-[50%] mt-10 lg:mt-[200px] lg:z-10">
-                <div className="bg-c_blue px-10 pb-10 pt-10 rounded-md mx-5 lg:w-[70%] lg:mx-auto">
+                <div className="bg-neutral-100 px-10 pb-10 pt-10 rounded-md mx-5 lg:w-[70%] lg:mx-auto">
                   <h2 className="font-bold text-[30px] text-center capitalize">
                     Apply for an account in minutes
                   </h2>
@@ -115,7 +119,7 @@ const BankingHero = () => {
                     </div>
 
                     <div className="mt-5 flex justify-end">
-                      <button className="btn rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white">
+                      <button className="btn px-5 py-3 rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white">
                         Submit
                       </button>
                     </div>

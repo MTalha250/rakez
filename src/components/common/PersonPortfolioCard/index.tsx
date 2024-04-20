@@ -14,14 +14,9 @@ const PersonPortfolioCard: FC<FeaturedContentCardProps> = ({
   return (
     <div className="max-w-[400px] max-h-[500px] pb-10 bg-white/45 text-black rounded-md drop-shadow-md">
       <div className="h-[230px] w-full">
-        {/* <img
-          src={image.src}
-          alt="image"
-          className="w-full h-full object-cover"
-        /> */}
         <div className="w-full h-full relative">
           <img
-            src={image.src}
+            src={image}
             className="object-cover w-full h-full"
             alt="no-image"
           />

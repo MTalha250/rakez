@@ -5,20 +5,20 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="h-[60vh] md:h-[70vh] lg:h-[80vh] w-full md:rounded-tr-[300px]">
-      {/* <img
-        src={Person.src}
+      <img
+        src={Person}
         alt="image"
         className="absolute h-[60vh] md:h-[70vh] lg:h-[80vh] w-full object-cover"
-      /> */}
-      <div className="h-[60vh] md:h-[70vh] lg:h-[80vh] w-full absolute">
+      />
+      {/* <div className="h-[60vh] md:h-[70vh] lg:h-[80vh] w-full absolute">
         <img
           src={Person}
           className="h-full w-full object-cover"
           alt="no-image"
         />
-      </div>
+      </div> */}
       {/* Overlay of hero section */}
-      <div className="absolute w-full h-[60vh] md:h-[70vh] lg:h-[80vh] bg-gradient-to-b from-black/50 to-secondary md:rounded-tr-[300px]"></div>
+      <div className="absolute w-full h-[60vh] md:h-[70vh] lg:h-[80vh] bg-gradient-to-b from-black/50 to-secondary"></div>
       <div
         className={`flex flex-col relative h-full justify-center items-center`}
       >
@@ -31,13 +31,13 @@ const Hero = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <div className="border-t-2 border-t-orange-500 h-3 w-10 mx-auto"></div>
+            <div className="border-t-2 border-t-primary h-3 w-10 mx-auto"></div>
             <div className="relative">
               <div className=" opacity-25 absolute top-0 text-[80px] md:text-[150px] lg:text-[200px] text-white/60 left-1/2 transform -translate-x-1/2">
                 Contact
               </div>
               <h1
-                className={`text-3xl sm:text-5xl lg:text-7xl text-green font-semibold drop-shadow-2xl mb-5`}
+                className={`text-3xl sm:text-5xl lg:text-7xl text-primary font-semibold drop-shadow-2xl mb-5`}
               >
                 Contact Us
               </h1>

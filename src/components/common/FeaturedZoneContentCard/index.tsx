@@ -14,15 +14,9 @@ const FeaturedContentCard: FC<FeaturedContentCardProps> = ({
   return (
     <div className="max-w-[400px] max-h-[500px] pb-10 bg-secondary text-white rounded-md drop-shadow-md">
       <div className="h-[160px] md:h-[230px] w-full bg-white">
-        {/* <img
-          src={image.src}
-          alt="image"
-          className="w-full h-full object-cover"
-        /> */}
-
         <div className="w-full h-full relative">
           <img
-            src={image.src}
+            src={image}
             className="object-cover w-full h-full"
             alt="no-image"
           />
@@ -36,7 +30,7 @@ const FeaturedContentCard: FC<FeaturedContentCardProps> = ({
         <p className="text-center text-[14px] sm:text-[18px]">{subTitle}</p>
 
         <div className="flex justify-center">
-          <button className="p-2 bg-white hover:bg-green rounded text-green hover:text-white mt-6 text-sm">
+          <button className="p-2 bg-primary hover:bg-tertiary rounded text-black hover:text-white mt-6 text-sm">
             Learn More
           </button>
         </div>

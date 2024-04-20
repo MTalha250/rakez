@@ -29,7 +29,7 @@ module.exports = {
         tertiary: "#EF4444",
 
         c_blue: "#CDE8F9",
-        c_orangish: "#f97316",
+        c_orangish: "#EF4444",
         c_greenish: "#0C6460",
       },
       keyframes: {

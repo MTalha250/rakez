@@ -77,8 +77,9 @@ const Contact = () => {
               <Form {...form}>
                 <form
                   onSubmit={form.handleSubmit(onSubmit)}
-                  className="space-y-4 w-full text-white"
+                  className="space-y-4 font-bold w-full bg-white p-10 rounded-lg shadow-lg"
                 >
+                  <h2 className="text-3xl text-secondary">Get in Touch</h2>
                   <FormField
                     control={form.control}
                     name="fullName"
@@ -89,7 +90,7 @@ const Contact = () => {
                           <FormControl>
                             <Input
                               {...field}
-                              className="border-0 border-b rounded-none"
+                              className="border-0 border-b rounded-none px-0 font-light"
                               placeholder="Type Full Name..."
                             />
                           </FormControl>
@@ -98,7 +99,7 @@ const Contact = () => {
                           <FormLabel>Email</FormLabel>
                           <FormControl>
                             <Input
-                              className="border-0 border-b rounded-none"
+                              className="border-0 border-b rounded-none px-0 font-light"
                               placeholder="Type Email..."
                             />
                           </FormControl>
@@ -108,21 +109,21 @@ const Contact = () => {
                           <FormControl>
                             <Input
                               placeholder="Type Phone Number..."
-                              className="border-0 border-b rounded-none"
+                              className="border-0 border-b rounded-none px-0 font-light"
                               {...field}
                             />
                           </FormControl>
                         </FormItem>
                         <div className="text-black">
-                          <FormLabel className="text-white">Services</FormLabel>
-                          <Select options={options} />
+                          <FormLabel>Services</FormLabel>
+                          <Select options={options} className="font-light" />
                         </div>
 
                         <FormItem>
                           <FormLabel>Message</FormLabel>
                           <FormControl>
                             <Textarea
-                              className="border-0 border-b rounded-none"
+                              className="border-0 border-b rounded-none px-0 font-light"
                               placeholder="Type Message..."
                               {...field}
                             />

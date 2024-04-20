@@ -12,13 +12,13 @@ const TeamCard = ({
       <figure>
         <div className="w-full h-[300px] relative">
           <img
-            src={img.src}
+            src={img}
             className="w-full h-full object-cover"
             alt="no-image"
           />
         </div>
       </figure>
-      <div className="card-body">
+      <div className="card-body p-2">
         <h2 className="card-title">{name}</h2>
         <p>{role}</p>
       </div>

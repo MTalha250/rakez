@@ -19,14 +19,6 @@ const HeroBanner: FC<HeroBannerProps> = ({
 }) => {
   return (
     <div className={`flex flex-col relative min-h-[70vh] ${bannerClasses}`}>
-      {/* <img
-        src={image.src}
-        alt="image"
-        className="absolute h-full w-full object-cover"
-      /> */}
-
-      {/* <div className="w-full h-full relative"> */}
-
       {image && (
         <img
           src={image}
@@ -51,7 +43,7 @@ const HeroBanner: FC<HeroBannerProps> = ({
         >
           {title && (
             <h1
-              className={`text-3xl sm:text-5xl text-green font-semibold drop-shadow-2xl mb-5 text-center`}
+              className={`text-3xl sm:text-5xl text-green text-primary font-semibold drop-shadow-2xl mb-5 text-center`}
             >
               {title}
             </h1>

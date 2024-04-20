@@ -1,4 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.stroke {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #f4ae39;
+  border-radius: 50px;
+  border: #000000 solid 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #66dc8d;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient {
+  background: linear-gradient(to right, #3f86ef 30%, #66dc8d 60%, #f5ae39 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 4s ease-in-out infinite alternate;
+}
+
+.custom-shape-divider-top-1711232969 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1711232969 svg {
+  position: relative;
+  display: block;
+  width: calc(643% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-top-1711232969 .shape-fill {
+  fill: #080808;
+}
+
+h1 {
+  line-height: 50px !important;
+}
+h2 {
+  line-height: 45px !important;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}

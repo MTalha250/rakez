@@ -1,34 +1,27 @@
 import img from "@/assets/book.png";
 import Team from "@/assets/team.png";
-import debounce from "lodash/debounce";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const Booking = () => {
-  const [scroll, setScroll] = useState(0);
-  useEffect(() => {
-    const handleScroll = debounce(() => {
-      setScroll(window.scrollY);
-    }, 100);
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
+  // const [scroll, setScroll] = useState(0);
+  const { scrollYProgress } = useScroll();
+  const rotate = useTransform(scrollYProgress, [0, 1], [0, 720]);
+
   return (
-    <div className="relative py-14 md:py-20 px-5 md:px-16 bg-secondary text-white overflow-hidden">
+    <motion.div className="relative py-14 md:py-20 px-5 md:px-16 bg-secondary text-white overflow-hidden">
       <motion.div
         initial={{
           left: "-12%",
         }}
-        animate={{ rotate: scroll / 10 }}
+        style={{ rotate: rotate }}
         className="w-[100px] h-[150px]  md:w-[300px] md:h-[350px] border-2 border-primary absolute top-56 left-0 rounded-tl-[100px] rounded-br-[100px]"
       />
       <motion.div
         initial={{
           right: "-12%",
         }}
-        animate={{ rotate: -scroll / 10 }}
+        style={{ rotate: rotate }}
         className="w-[100px] h-[150px] md:w-[300px] md:h-[350px] border-2 border-primary absolute top-96 right-0 rounded-tl-[100px] rounded-br-[100px]"
       />
       {/* <img
@@ -59,7 +52,6 @@ const Booking = () => {
         </div>
         <div className="flex flex-col md:flex-row md:items-center md:mt-16">
           <div className="py-10 flex-1">
-            {/* <img src={img.src} alt="image" className="w-full max-h-[300px]" /> */}
 
             <div className="w-full h-[300px] relative">
               <img
@@ -90,7 +82,7 @@ const Booking = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -6,19 +6,19 @@ import NormalParagraph from "../common/Paragraphs/Paragraphs";
 import { Link } from "react-router-dom";
 const BankingDes = () => {
   return (
-    <div className="pt-10">
+    <div className="pt-32">
       <ContainerWrapper>
         {" "}
         <Heading1 title="Premium Banking Solutions" classes="text-center" />
       </ContainerWrapper>
 
-      <div className="bg-c_blue/50 py-12">
+      <div className="bg-primary/5 py-12">
         <ContainerWrapper>
           {/* BRANDING & LOGO DESIGN PACKAGE */}
           <div className="flex flex-col md:flex-row gap-20 min-h-[350px]">
             <div className="flex-1">
-              <div className="border-2 border-t border-orange-500 w-[50px] my-2"></div>
-              <h3 className="text-orange-500 font-bold text-[16px] uppercase mb-5 ">
+              <div className="border-2 border-t border-c_orangish w-[50px] my-2"></div>
+              <h3 className="text-c_orangish font-bold text-xl uppercase mb-5 ">
                 Secure your bank account in Dubai with premium personal service
                 for as low as AED 1,500
               </h3>
@@ -83,7 +83,7 @@ const BankingDes = () => {
               />
               <div className="flex justify-end">
                 <Link to="/meeting">
-                  <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+                  <button className="btn py-2 px-5 bg-c_orangish border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
                     Get Started
                   </button>
                 </Link>

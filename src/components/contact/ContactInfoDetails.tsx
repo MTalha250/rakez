@@ -17,6 +17,9 @@ const ContactInfoDetails: FC<ContactInfoDetailsProps> = ({
       <div>
         <h6 className="text-[14px] text-green">{title}</h6>
         <p className="text-[12px]">{subTitle}</p>
+        <p className="text-[12px]">
+          {title == "Call us" && "+971 50 10 50 570"}
+        </p>
       </div>
     </div>
   );

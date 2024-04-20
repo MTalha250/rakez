@@ -27,11 +27,6 @@ const RasAlKhaimahCarouselSection = () => {
             <CarouselContent className="flex">
               <CarouselItem className=" sm:basis-[80%] lg:basis-[40%] rounded-tr-[100px] rounded-bl-[100px] overflow-hidden">
                 <div className="h-[50vh] bg-secondary">
-                  {/* <img
-                    src={City1.src}
-                    alt="image"
-                    className="object-cover w-full h-full"
-                  /> */}
                   <div className="w-full h-full relative">
                     <img
                       src={City1}
@@ -43,11 +38,6 @@ const RasAlKhaimahCarouselSection = () => {
               </CarouselItem>
               <CarouselItem className=" sm:basis-[80%] lg:basis-[40%] rounded-tr-[100px] rounded-bl-[100px] overflow-hidden">
                 <div className="h-[50vh] bg-secondary">
-                  {/* <img
-                    src={City2.src}
-                    alt="image"
-                    className="object-cover w-full h-full"
-                  /> */}
                   <div className="w-full h-full relative">
                     <img
                       src={City2}
@@ -59,11 +49,6 @@ const RasAlKhaimahCarouselSection = () => {
               </CarouselItem>
               <CarouselItem className=" sm:basis-[80%] lg:basis-[40%] rounded-tr-[100px] rounded-bl-[100px] overflow-hidden">
                 <div className="h-[50vh] bg-secondary">
-                  {/* <img
-                    src={City3.src}
-                    alt="image"
-                    className="object-cover w-full h-full"
-                  /> */}
                   <div className="w-full h-full relative">
                     <img
                       src={City3}

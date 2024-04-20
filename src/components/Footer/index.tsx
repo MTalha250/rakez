@@ -23,20 +23,23 @@ const Footer = () => {
             </li>
             <li className="font-bold">+971 4339905</li>
             <li className="pt-3">
-              Internationalcity france cluster p 24 office s-11
+              <span className="font-bold text-primary">WhatsApp:</span>{" "}
+              <a href="https://wame.pro/6q9srt">+971 50 10 50 570</a>
             </li>
-            <li className="font-bold">email: info@rakez.com</li>
+            <li className="font-bold">
+              <span className="text-primary">Email:</span> setup@scchouse.com
+            </li>
           </ul>
         </div>
         <div className="w-[400px]">
           <ul className="flex space-x-3 text-2xl">
             <li>
-              <a href="">
+              <a href="https://www.facebook.com/servcorps">
                 <FaFacebook className="text-primary" />
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://www.instagram.com/servcorpscorporate/">
                 <FaInstagram className="text-primary" />
               </a>
             </li>
@@ -52,8 +55,8 @@ const Footer = () => {
             </li>
           </ul>
           <p className="mt-5">
-            Office 105, Level 1, Emaar Square – Building 4, Sheikh Mohammed Bin
-            Rashid Boulevard Downtown Dubai, United Arab Emirates
+            P24, Office S11 - International City - France Cluster - Dubai -
+            United Arab Emirates
           </p>
         </div>
       </div>

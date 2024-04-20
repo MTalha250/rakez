@@ -10,9 +10,7 @@ const page = () => {
       <UpperNavbar>
         <HomeUpperNavContent />
       </UpperNavbar>
-
       <BankingHero />
-
       <BankingDes />
 
       <AccountApplication />

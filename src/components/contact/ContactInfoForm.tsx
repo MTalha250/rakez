@@ -10,7 +10,7 @@ const ContactInfoForm = () => {
         <div className="lg:max-w-[80%] mx-auto">
           <div className="flex flex-col md:flex-row">
             <div className="flex-1 bg-white p-6 md:p-10 rounded-tl-[100px] md:rounded-tl-none md:rounded-bl-[100px]">
-              <div className="border-t-4 border-t-orange-500 h-3 w-10 mt-10 lg:mt-0"></div>
+              <div className="border-t-4 border-t-primary h-3 w-10 mt-10 lg:mt-0"></div>
 
               <h4 className="font-bold text-xl">
                 Let’s talk your business to{" "}
@@ -33,64 +33,66 @@ const ContactInfoForm = () => {
                     <MdAttachEmail className="font-bold text-green text-[30px]" />
                   }
                   title="Email us"
-                  subTitle="info@domain.com"
+                  subTitle="setup@scchouse.com"
                 />
                 <ContactInfoDetails
                   icon={
                     <MdWifiCalling3 className="font-bold text-green text-[30px]" />
                   }
                   title="Call us"
-                  subTitle="(+088) 589-8745"
+                  subTitle="+971 4 433 9905 
+                   "
                 />
               </div>
             </div>
 
             <div className="flex-1 bg-green p-6 md:p-10 rounded-br-[100px] md:rounded-br-none md:rounded-tr-[100px]">
               <div>
-                <div className="border-t-4 border-t-orange-500 h-3 w-10"></div>
-                <h4 className="font-bold text-xl text-white">
-                  Request a call forward. back
+                <div className="border-t-4 border-t-primary h-3 w-10"></div>
+                <h4 className="font-bold text-xl">
+                  Let’s talk your business to{" "}
+                  <span className="text-tertiary">move</span> forward.
                 </h4>
                 <div className="mt-5">
                   <form>
-                    <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
+                    <div className="grid gap-5 grid-cols-1 md:grid-cols-2 text-black">
                       <div>
                         <input
                           type="text"
-                          className="bg-white/30 px-4 py-2 border-none rounded-tl-[20px] rounded-br-[20px] w-full placeholder-white/50"
-                          placeholder="Your website"
+                          className="bg-white/30 px-4 py-2 border-none rounded-tl-[20px] rounded-br-[20px] w-full placeholder-neutral-500"
+                          placeholder="Your name"
                         />
                       </div>
                       <div>
                         <input
                           type="text"
-                          className="bg-white/30 px-4 py-2 border-none rounded-tl-[20px] rounded-br-[20px] w-full placeholder-white/50"
-                          placeholder="Your website"
+                          className="bg-white/30 px-4 py-2 border-none rounded-tl-[20px] rounded-br-[20px] w-full placeholder-neutral-500"
+                          placeholder="Your email"
                         />
                       </div>
                       <div>
                         <input
                           type="text"
-                          className="bg-white/30 px-4 py-2 border-none rounded-tl-[20px] rounded-br-[20px] w-full placeholder-white/50"
-                          placeholder="Your website"
+                          className="bg-white/30 px-4 py-2 border-none rounded-tl-[20px] rounded-br-[20px] w-full placeholder-neutral-500"
+                          placeholder="Your phone"
                         />
                       </div>
                       <div>
                         <input
                           type="text"
-                          className="bg-white/30 px-4 py-2 border-none rounded-tl-[20px] rounded-br-[20px] w-full placeholder-white/50"
-                          placeholder="Your website"
+                          className="bg-white/30 px-4 py-2 border-none rounded-tl-[20px] rounded-br-[20px] w-full placeholder-neutral-500"
+                          placeholder="Your company"
                         />
                       </div>
                     </div>
                     <div className="mt-5">
                       <textarea
-                        className="bg-white/30 px-4 py-2 border-none rounded-tl-[20px] rounded-br-[20px] w-full placeholder-white/50 h-[100px]"
-                        placeholder="Your website"
+                        className="bg-white/30 px-4 py-2 border-none rounded-tl-[20px] rounded-br-[20px] w-full placeholder-neutral-500 h-[100px]"
+                        placeholder="Your message"
                       />
                     </div>
 
-                    <button className="rounded-tl-[20px] rounded-br-[20px] font-medium px-4 py-2 bg-orange-500 text-white cursor-pointer mt-5 text-[14px]">
+                    <button className="rounded-tl-[20px] rounded-br-[20px] font-medium px-4 py-2 bg-tertiary text-white cursor-pointer mt-5 text-[14px]">
                       Submit Now
                     </button>
                   </form>

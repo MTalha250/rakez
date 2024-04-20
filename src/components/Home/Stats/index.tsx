@@ -7,11 +7,6 @@ import StatsNumbers from "./StatsNumbers";
 const Stats = () => {
   return (
     <div className={`flex flex-col relative min-h-[75vh] `}>
-      {/* <img
-        src={pic.src}
-        alt="image"
-        className="absolute h-full w-full object-cover"
-      /> */}
       <img
         src={pic}
         alt="no-image"

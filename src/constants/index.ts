@@ -3,7 +3,7 @@ export const navLinks = [
     href: "/meeting",
     label: "Schedule a Meeting",
   },
-  
+
   {
     href: "/about",
     label: "About Us",
@@ -38,7 +38,7 @@ export const navLinks = [
       },
     ],
   },
- 
+
   // {
   //   href: "/setupBusiness",
   //   label: "Setup a Business",
@@ -54,10 +54,6 @@ export const navLinks = [
   {
     href: "/marketing",
     label: "Marketing",
-  },
-  {
-    href: "/DIFC",
-    label: "DIFC",
   },
   {
     href: "/support",

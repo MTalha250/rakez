@@ -46,7 +46,7 @@ const DIFC = () => {
                     className="flex flex-col h-[85vh] items-center justify-center"
                   >
                     <h1
-                      className={`text-3xl sm:text-5xl text-green font-semibold drop-shadow-2xl mb-5 text-center`}
+                      className={`text-3xl sm:text-5xl text-primary font-semibold drop-shadow-2xl mb-5 text-center`}
                     >
                       Transforming Ideas into Reality
                     </h1>
