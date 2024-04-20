@@ -1,10 +1,8 @@
 import img from "@/assets/book.png";
 import Team from "@/assets/team.png";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useEffect, useState } from "react";
 
 const Booking = () => {
-  // const [scroll, setScroll] = useState(0);
   const { scrollYProgress } = useScroll();
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 720]);
 
@@ -52,7 +50,6 @@ const Booking = () => {
         </div>
         <div className="flex flex-col md:flex-row md:items-center md:mt-16">
           <div className="py-10 flex-1">
-
             <div className="w-full h-[300px] relative">
               <img
                 src={img}
