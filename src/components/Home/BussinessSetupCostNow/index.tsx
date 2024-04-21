@@ -42,7 +42,7 @@ const BussinessSetupCostNow = () => {
             Calculate Your
           </h1>
           <h1 className="text-3xl sm:text-5xl font-semibold drop-shadow-2xl md:mb-5 text-center">
-            <span className="text-orange-500"> Business Setup Cost Now</span>
+            <span className="text-tertiary"> Business Setup Cost Now</span>
           </h1>
         </div>
 
@@ -57,7 +57,7 @@ const BussinessSetupCostNow = () => {
                 list.length > 0 &&
                 list.map((item, index) => (
                   <div className="flex items-center gap-10 mb-5">
-                    <div className="bg-white p-3 text-orange-500 rounded-tl-[10px] rounded-br-[10px]">
+                    <div className="bg-white p-3 text-tertiary rounded-tl-[10px] rounded-br-[10px]">
                       0{index + 1}
                     </div>
                     <p className="text-[20px] ">{item.title}</p>

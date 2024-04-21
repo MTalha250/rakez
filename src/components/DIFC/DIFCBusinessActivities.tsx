@@ -7,7 +7,7 @@ const DIFCBusinessActivities = () => {
       <ContainerWrapper classes="py-14 md:py-24">
         <div>
           <h2 className="font-bold text-[30px] capitalize text-center">
-            <span className="text-orange-500">Applicable</span> Business
+            <span className="text-tertiary">Applicable</span> Business
             Activities
           </h2>
           <div className="grid gap-14 grid-cols-1 md:grid-cols-2 mt-10">

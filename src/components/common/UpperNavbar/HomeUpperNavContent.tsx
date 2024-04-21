@@ -14,7 +14,7 @@ const HomeUpperNavContent = () => {
       <div className="space-x-5">
         <strong className="text-white font-bold">800 - LICENSE</strong>
         <button
-          className="bg-c_orangish py-2 px-4 border border-c_orangish hover:bg-transparent text-white rounded-tr-2xl rounded-bl-2xl transition duration-300"
+          className="bg-c_orangish py-2 px-5 border border-c_orangish hover:bg-transparent text-white rounded-tr-2xl rounded-bl-2xl transition duration-300"
           onClick={handleClick}
         >
           Get Started

@@ -22,7 +22,7 @@ const MarketingHeroLeft = () => {
               className={`text-3xl sm:text-5xl text-white  font-semibold drop-shadow-2xl mb-5 text-center tracking-tight`}
             >
               We Offer 360-Degree{" "}
-              <span className="text-orange-500">Marketing Support </span>
+              <span className="text-tertiary">Marketing Support </span>
               for your Business
             </h1>
 
@@ -42,7 +42,7 @@ const MarketingHeroLeft = () => {
                 journey, from strategizing and planning to execution.
               </p>
 
-              <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+              <button className="btn px-5 py-3  bg-tertiary border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
                 Get Started
               </button>
             </div>

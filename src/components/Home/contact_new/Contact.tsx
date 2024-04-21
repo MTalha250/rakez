@@ -46,7 +46,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="bg-primary  py-14">
+    <div className="bg-primary  py-14" id="home-contact">
       <ContainerWrapper>
         <div className=" flex flex-col md:flex-row ">
           <div className="flex-1 p-10 font-bold">

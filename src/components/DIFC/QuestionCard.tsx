@@ -11,10 +11,10 @@ const QuestionCard = ({
 }) => {
   const [flag, setFlag] = useState<boolean>(false);
   return (
-    <div className="border p-3 sm:p-7 bg-c_greenish rounded-tl-[50px] rounded-br-[50px] text-white cursor-pointer">
+    <div className="border p-3 sm:p-7 bg-primary rounded-tl-[50px] rounded-br-[50px] text-black cursor-pointer">
       <div className="flex flex-col sm:flex-row items-center gap-2">
-        <div className="p-3 sm:p-5 bg-green-100/50 rounded-md">
-          <RiSecurePaymentLine className="text-[24px] text-green-300" />
+        <div className="p-3 sm:p-5 rounded-md">
+          <RiSecurePaymentLine className="text-[24px] text-tertiary" />
         </div>
         <div>
           <div

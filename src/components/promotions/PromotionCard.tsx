@@ -39,7 +39,7 @@ const PromotionCard = ({
 
         <div className="md:basis-[50%] h-full flex flex-col justify-between p-7">
           <div className="">
-            <h4 className="text-orange-500 font-bold text-[18px] uppercase">
+            <h4 className="text-tertiary font-bold text-xl uppercase">
               {title}
             </h4>
             <p className="mt-2">{des}</p>
@@ -52,7 +52,7 @@ const PromotionCard = ({
 
           <div className="mt-5">
             <div className="flex items-center gap-3">
-              <CiDiscount1 className="text-orange-500 text-[20px]" />
+              <CiDiscount1 className="text-tertiary text-[20px]" />
               <h5 className="text-[16px] font-bold">
                 Package Starting From {price}
               </h5>
@@ -60,7 +60,7 @@ const PromotionCard = ({
 
             <div className="mt-5">
               <Link to={navLink}>
-                <button className="btn bg-orange-500 text-white rounded-tl-[30px] rounded-br-[30px]">
+                <button className="btn px-5 py-3 bg-tertiary text-white rounded-tl-[30px] rounded-br-[30px]">
                   Learn More
                 </button>
               </Link>

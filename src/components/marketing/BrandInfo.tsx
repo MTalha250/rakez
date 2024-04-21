@@ -8,7 +8,7 @@ const BrandInfo = () => {
         <h1
           className={`text-3xl sm:text-5xl  font-semibold drop-shadow-2xl mb-5 text-center`}
         >
-          Let Us Help{" "}<span className="text-orange-500">Define Your Brand </span>{" "}
+          Let Us Help <span className="text-tertiary">Define Your Brand </span>{" "}
           Identity!
         </h1>
 

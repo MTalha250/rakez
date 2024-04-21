@@ -8,6 +8,7 @@ import Packages from "@/components/marketing/Packages";
 import OurTeam from "@/components/marketing/OurTeam";
 import BrandInfo from "@/components/marketing/BrandInfo";
 import ContactBox from "@/components/marketing/ContactBox";
+import { Link } from "react-router-dom";
 
 const Marketing = () => {
   return (
@@ -55,9 +56,7 @@ const Marketing = () => {
                       className={`text-3xl sm:text-5xl text-white  font-semibold drop-shadow-2xl mb-5 text-center tracking-tight`}
                     >
                       We Offer 360-Degree{" "}
-                      <span className="text-orange-500">
-                        Marketing Support{" "}
-                      </span>
+                      <span className="text-tertiary">Marketing Support </span>
                       for your Business
                     </h1>
 
@@ -77,9 +76,12 @@ const Marketing = () => {
                         from Day 1.
                       </p>
 
-                      <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+                      <Link
+                        to="/support"
+                        className="btn px-5 py-3 inline-block bg-tertiary border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]"
+                      >
                         Get Started
-                      </button>
+                      </Link>
                     </div>
                   </motion.div>
                 </div>
@@ -240,7 +242,7 @@ const Marketing = () => {
                     </div>
 
                     <div className="mt-5 flex justify-end">
-                      <button className="btn rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white">
+                      <button className="btn px-5 py-3 rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white">
                         Submit
                       </button>
                     </div>

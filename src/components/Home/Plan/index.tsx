@@ -88,7 +88,7 @@ const Plan = () => {
           </h1>
           <Link
             to=""
-            className="transition duration-300 group-hover:bg-secondary group-hover:text-white w-full block text-center rounded-full border-2 border-secondary py-3"
+            className="transition px-5 duration-300 group-hover:bg-secondary group-hover:text-white w-full block text-center rounded-full border-2 border-secondary py-3"
           >
             Get Started
           </Link>

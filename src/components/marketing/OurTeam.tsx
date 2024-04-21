@@ -15,7 +15,7 @@ const OurTeam = () => {
         <h1
           className={`text-3xl sm:text-5xl  font-semibold drop-shadow-2xl mb-5 text-center`}
         >
-          About Our <span className="text-orange-500">Team</span>
+          About Our <span className="text-tertiary">Team</span>
           <p className="text-[14px] text-center text-black mt-5 font-normal leading-5">
             We believe that actions speak louder than words. Our management team
             will show you how we’re your company’s ideal marketing support
@@ -43,11 +43,7 @@ const OurTeam = () => {
             role="Senior Consultant"
             img={Person3}
           />
-          <TeamCard
-            name="Shaheen Afridi"
-            role="IT Consultant"
-            img={Person4}
-          />
+          <TeamCard name="Shaheen Afridi" role="IT Consultant" img={Person4} />
           <TeamCard
             name="Henry James Miller"
             role="Senior Web Developer"

@@ -9,8 +9,8 @@ interface ExploreCardsProps {
 const ExploreCards: FC<ExploreCardsProps> = ({ icon, title, des }) => {
   return (
     <div className="relative">
-      <div className="card shadow-xl bg-c_blue rounded-md h-[420px] lg:h-[450px] w-full transform rotate-2 md:rotate-12 z-10"></div>
-      <div className="card shadow-xl bg-green/90 rounded-md h-[420px] lg:h-[450px] w-full z-20 absolute top-0">
+      <div className="card shadow-xl bg-white rounded-md h-[420px] lg:h-[450px] w-full transform rotate-2 md:rotate-12 z-10"></div>
+      <div className="card shadow-xl bg-white rounded-md h-[420px] lg:h-[450px] w-full z-20 absolute top-0 p-10">
         <div className="card-body">
           <div className="h-[50px] flex justify-center">{icon}</div>
           <div>

@@ -1,6 +1,7 @@
 import img from "@/assets/book.png";
 import Team from "@/assets/team.png";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Booking = () => {
   const { scrollYProgress } = useScroll();
@@ -44,9 +45,12 @@ const Booking = () => {
             legal processes while giving you complete guidance, so book an
             appointment today!
           </p>
-          <button className="px-8 py-2 bg-primary text-white rounded-full w-fit">
+          <Link
+            to="/meeting"
+            className="px-8 py-2 bg-primary text-white rounded-full w-fit"
+          >
             Book Now
-          </button>
+          </Link>
         </div>
         <div className="flex flex-col md:flex-row md:items-center md:mt-16">
           <div className="py-10 flex-1">

@@ -8,6 +8,7 @@ import { variants } from "@/constants";
 import { motion } from "framer-motion";
 import ContainerWrapper from "../common/ContainerWrapper";
 import { GiDividedSquare } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Packages = () => {
   return (
@@ -37,8 +38,8 @@ const Packages = () => {
             {/* BRANDING & LOGO DESIGN PACKAGE */}
             <div className="flex flex-col md:flex-row gap-20 min-h-[350px]">
               <div className="flex-1">
-                <div className="border-2 border-t border-orange-500 w-[50px] my-2"></div>
-                <h3 className="text-orange-500 font-bold text-[16px] uppercase">
+                <div className="border-2 border-t border-tertiary w-[50px] my-2"></div>
+                <h3 className="text-tertiary font-bold text-[16px] uppercase">
                   Branding & Logo Design Package
                 </h3>
                 <ul className="mt-5">
@@ -82,9 +83,12 @@ const Packages = () => {
                     <p className="text-[14px]">Letter Head</p>
                   </li>
                 </ul>
-                <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+                <Link
+                  to="/support"
+                  className="btn px-5 py-3 inline-block bg-tertiary border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]"
+                >
                   Get Started
-                </button>
+                </Link>
               </div>
               <div className="flex-1">
                 <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
@@ -105,8 +109,8 @@ const Packages = () => {
         <ContainerWrapper classes="py-12">
           <div className="flex flex-col md:flex-row-reverse gap-20 min-h-[450px]">
             <div className="flex-1">
-              <div className="border-2 border-t border-orange-500 w-[50px] my-2"></div>
-              <h3 className="text-orange-500 font-bold text-[16px] uppercase">
+              <div className="border-2 border-t border-tertiary w-[50px] my-2"></div>
+              <h3 className="text-tertiary font-bold text-[16px] uppercase">
                 Website Design + Development Package
               </h3>
 
@@ -142,9 +146,12 @@ const Packages = () => {
                   <p className="text-[14px]">Email Configuration</p>
                 </li>
               </ul>
-              <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+              <Link
+                to="/support"
+                className="btn px-5 py-3 inline-block bg-tertiary border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]"
+              >
                 Get Started
-              </button>
+              </Link>
             </div>
             <div className="flex-1">
               <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
@@ -165,8 +172,8 @@ const Packages = () => {
           <ContainerWrapper>
             <div className="flex flex-col md:flex-row gap-20 min-h-[350px]">
               <div className="flex-1">
-                <div className="border-2 border-t border-orange-500 w-[50px] my-2"></div>
-                <h3 className="text-orange-500 font-bold text-[16px] uppercase">
+                <div className="border-2 border-t border-tertiary w-[50px] my-2"></div>
+                <h3 className="text-tertiary font-bold text-[16px] uppercase">
                   Digital Marketing
                 </h3>
                 <ul className="mt-5">
@@ -216,9 +223,12 @@ const Packages = () => {
                     <p className="text-[14px]">Monitoring and Reporting</p>
                   </li>
                 </ul>
-                <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+                <Link
+                  to="/support"
+                  className="btn px-5 inline-block py-3 bg-tertiary border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]"
+                >
                   Get Started
-                </button>
+                </Link>
               </div>
               <div className="flex-1">
                 <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
@@ -239,8 +249,8 @@ const Packages = () => {
         <ContainerWrapper classes="py-12">
           <div className="flex flex-col md:flex-row-reverse gap-20 min-h-[450px]">
             <div className="flex-1">
-              <div className="border-2 border-t border-orange-500 w-[50px] my-2"></div>
-              <h3 className="text-orange-500 font-bold text-[16px] uppercase">
+              <div className="border-2 border-t border-tertiary w-[50px] my-2"></div>
+              <h3 className="text-tertiary font-bold text-[16px] uppercase">
                 Social Media Marketing
               </h3>
 
@@ -282,9 +292,12 @@ const Packages = () => {
                   <p className="text-[14px]">Monitoring and Reporting</p>
                 </li>
               </ul>
-              <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+              <Link
+                to="/support"
+                className="btn px-5 py-3 inline-block bg-tertiary border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]"
+              >
                 Get Started
-              </button>
+              </Link>
             </div>
             <div className="flex-1">
               <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
@@ -305,8 +318,8 @@ const Packages = () => {
           <ContainerWrapper>
             <div className="flex flex-col md:flex-row gap-20 min-h-[350px]">
               <div className="flex-1">
-                <div className="border-2 border-t border-orange-500 w-[50px] my-2"></div>
-                <h3 className="text-orange-500 font-bold text-[16px] uppercase">
+                <div className="border-2 border-t border-tertiary w-[50px] my-2"></div>
+                <h3 className="text-tertiary font-bold text-[16px] uppercase">
                   PR & Media Exposure
                 </h3>
                 <ul className="mt-5">
@@ -337,9 +350,12 @@ const Packages = () => {
                     <p className="text-[14px]">Reporting</p>
                   </li>
                 </ul>
-                <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+                <Link
+                  to="/support"
+                  className="btn px-5 py-3 inline-block bg-tertiary border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]"
+                >
                   Get Started
-                </button>
+                </Link>
               </div>
               <div className="flex-1">
                 <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">
@@ -359,8 +375,8 @@ const Packages = () => {
         <ContainerWrapper classes="py-12">
           <div className="flex flex-col md:flex-row-reverse gap-20 min-h-[450px]">
             <div className="flex-1">
-              <div className="border-2 border-t border-orange-500 w-[50px] my-2"></div>
-              <h3 className="text-orange-500 font-bold text-[16px] uppercase">
+              <div className="border-2 border-t border-tertiary w-[50px] my-2"></div>
+              <h3 className="text-tertiary font-bold text-[16px] uppercase">
                 Event Management
               </h3>
 
@@ -398,9 +414,12 @@ const Packages = () => {
                   <p className="text-[14px]">Reporting</p>
                 </li>
               </ul>
-              <button className="btn  bg-orange-500 border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+              <Link
+                to="/support"
+                className="btn px-5 py-3 inline-block bg-tertiary border-none mt-7 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]"
+              >
                 Get Started
-              </button>
+              </Link>
             </div>
             <div className="flex-1">
               <div className="h-[300px] sm:h-full rounded-tl-[100px] rounded-br-[100px]">

@@ -13,7 +13,7 @@ const FAQ = ({ bg }: { bg?: string }) => {
       <ContainerWrapper>
         <div className="flex flex-col items-center py-16 gap-5">
           <h3 className="text-3xl font-semibold">
-            Frequently Asked <span className="text-orange-500">Questions</span>
+            Frequently Asked <span className="text-tertiary">Questions</span>
           </h3>
           <Accordion type="single" collapsible className="w-full">
             {faq.map((a, i) => (

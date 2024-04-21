@@ -23,11 +23,7 @@ const ExploreDIFC = () => {
       /> */}
 
       <div className="w-full h-full absolute">
-        <img
-          src={Img1}
-          className="h-full w-full object-cover"
-          alt="no-image"
-        />
+        <img src={Img1} className="h-full w-full object-cover" alt="no-image" />
       </div>
       {/* Overlay of hero section */}
       <div className="absolute top-0 w-full h-full bg-gradient-to-b from-black/50 to-secondary"></div>
@@ -60,9 +56,9 @@ const ExploreDIFC = () => {
           </motion.div>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-20 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <ExploreCards
-            icon={<TbLicense className="text-c_greenish text-[50px]" />}
+            icon={<TbLicense className="text-tertiary text-[50px]" />}
             title="Commercial Trade License"
             des="A commercial trade license is a legal permit that allows
                     individuals or companies to conduct business activities
@@ -71,27 +67,27 @@ const ExploreDIFC = () => {
                     opportunities."
           />
           <ExploreCards
-            icon={<ImAddressBook className="text-c_greenish text-[50px]" />}
+            icon={<ImAddressBook className="text-tertiary text-[50px]" />}
             title="Co-working Space with Prestigious DIFC Office Address "
             des="A co-working space in DIFC offers a modern workspace with a prestigious office address in Dubai's financial hub. It provides entrepreneurs and businesses with flexible solutions, high-speed internet, and shared amenities for collaboration, networking, and cost-effective operations."
           />
           <ExploreCards
-            icon={<FaCcVisa className="text-c_greenish text-[50px]" />}
+            icon={<FaCcVisa className="text-tertiary text-[50px]" />}
             title="4 Visa Allocation"
             des="4 Visa Allocation, signifies the availability of four visas for individuals linked to a business or organization. These visas enable legal residence and work within a specific area, aiding international operations, workforce management, and talent acquisition."
           />
           <ExploreCards
-            icon={<LiaDigitalOcean className="text-c_greenish text-[50px]" />}
+            icon={<LiaDigitalOcean className="text-tertiary text-[50px]" />}
             title="Fully Digital Onboarding Process "
             des="A fully digital onboarding process streamlines the procedure of welcoming new customers or employees by leveraging digital platforms. It eliminates paperwork, reduces processing time, and enhances efficiency."
           />
           <ExploreCards
-            icon={<SiArkecosystem className="text-c_greenish text-[50px]" />}
+            icon={<SiArkecosystem className="text-tertiary text-[50px]" />}
             title="Access to all DIFC Amenities and Ecosystem  "
             des="Access to all DIFC amenities and ecosystem offers comprehensive access to facilities, services, and opportunities within the Dubai International Financial Centre, promoting growth and success."
           />
           <ExploreCards
-            icon={<IoIosPricetags className="text-c_greenish text-[50px]" />}
+            icon={<IoIosPricetags className="text-tertiary text-[50px]" />}
             title="Same Renewal Price for 5 Years"
             des="Same Renewal Price for 5 Years, means that the renewal cost remains consistent for a period of five years. This provides stability and predictability in financial planning and budgeting, allowing businesses or individuals to anticipate expenses accurately over an extended period."
           />

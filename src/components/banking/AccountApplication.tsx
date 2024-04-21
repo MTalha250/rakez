@@ -58,7 +58,7 @@ const AccountApplication = () => {
           </div>
           <div className="flex justify-center">
             <Link to="/meeting">
-              <button className="btn py-2 px-5 bg-orange-500 border-none mt-10 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
+              <button className="btn py-2 px-5 bg-tertiary border-none mt-10 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
                 Apply Now
               </button>
             </Link>

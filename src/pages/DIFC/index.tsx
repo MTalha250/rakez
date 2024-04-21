@@ -109,7 +109,7 @@ const DIFC = () => {
                     </div>
 
                     <div className="mt-5 flex justify-end">
-                      <button className="btn rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white">
+                      <button className="btn px-5 py-3 rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white">
                         Submit
                       </button>
                     </div>

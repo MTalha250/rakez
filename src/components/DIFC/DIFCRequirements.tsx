@@ -7,7 +7,7 @@ const DIFCRequirements = () => {
       <ContainerWrapper classes="py-14 md:py-24">
         <div>
           <h2 className="font-bold text-[30px] capitalize">
-            <span className="text-orange-500">DIFC Innovation License</span>{" "}
+            <span className="text-tertiary">DIFC Innovation License</span>{" "}
             Requirements:
           </h2>
 
@@ -74,7 +74,7 @@ const DIFCRequirements = () => {
         <div className="mt-16">
           <h2 className="font-bold text-[30px] capitalize">
             Benefits of the DIFC{" "}
-            <span className="text-orange-500">Tech Start-up </span>
+            <span className="text-tertiary">Tech Start-up </span>
             Package
           </h2>
 

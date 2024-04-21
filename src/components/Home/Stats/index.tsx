@@ -44,7 +44,7 @@ const Stats = () => {
             <StatsNumbers
               number="10"
               text="Years in Business"
-              color="text-orange-500"
+              color="text-tertiary"
               boxColor="bg-orange-300/40"
             />
           </div>
