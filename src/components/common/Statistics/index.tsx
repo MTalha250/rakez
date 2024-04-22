@@ -21,11 +21,11 @@ export const Statistics: FC<StatisticsProps> = ({
       className={`flex justify-center items-center flex-col gap-y-4  max-w-[350px]`}
     >
       <div
-        className={`border flex justify-center items-center   p-10 rounded-full ${boxBorderClasses}`}
+        className={`border border-primary  flex justify-center items-center   p-10 rounded-full ${boxBorderClasses}`}
       >
         {icon}
       </div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center text-primary">
         <div className="text-4xl font-semibold text-center">{title}</div>
         <div className="uppercase italic text-center mt-[6px]">{subTitle}</div>
       </div>
@@ -47,7 +47,7 @@ export const StatisticsHorizontal: FC<StatisticsProps> = ({
       className={`flex justify-center items-center md:flex-col gap-4  max-w-[350px]`}
     >
       <div
-        className={`border flex justify-center p-5   sm:p-10 rounded-full ${boxBorderClasses}`}
+        className={`border border-primary flex justify-center p-5   sm:p-10 rounded-full ${boxBorderClasses}`}
       >
         {icon}
       </div>

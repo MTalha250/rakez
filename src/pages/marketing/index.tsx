@@ -28,7 +28,7 @@ const Marketing = () => {
       {/* hero section  */}
       <div className="">
         <div className="">
-          <div className="w-full h-[110vh] lg:h-[140vh] absolute">
+          <div className="w-full h-[110vh] lg:h-[120vh] absolute">
             <img
               src={marketing}
               className="w-full h-full object-cover"
@@ -37,14 +37,14 @@ const Marketing = () => {
           </div>
 
           {/* Overlay of hero section */}
-          <div className="absolute w-full h-[110vh] lg:h-[140vh] bg-gradient-to-b from-black/50 to-secondary"></div>
+          <div className="absolute w-full h-[110vh] lg:h-[120vh] bg-gradient-to-b from-black/50 to-secondary"></div>
 
           <div className="">
-            <div className="flex flex-col lg:flex-row ">
+            <div className="flex flex-col lg:flex-row px-8 md:px-16 lg:px-24">
               {/* Left */}
-              <div className={`flex flex-col basis-[40%]`}>
+              <div className={`flex flex-col basis-[60%]`}>
                 {/* Content of hero */}
-                <div className="flex justify-start ld:px-10 px-5 mt-10 lg:mt-40">
+                <div className="flex justify-start ld:px-10 px-5 mt-10">
                   <motion.div
                     variants={variants}
                     initial="initial"
@@ -53,14 +53,14 @@ const Marketing = () => {
                     className="flex flex-col h-[100vh] items-center justify-center"
                   >
                     <h1
-                      className={`text-3xl sm:text-5xl text-white  font-semibold drop-shadow-2xl mb-5 text-center tracking-tight`}
+                      className={`text-3xl sm:text-5xl text-white  font-semibold drop-shadow-2xl mb-5  tracking-tight`}
                     >
                       We Offer 360-Degree{" "}
                       <span className="text-tertiary">Marketing Support </span>
                       for your Business
                     </h1>
 
-                    <div className="text-white text-center z-10">
+                    <div className="text-white z-10">
                       <div className=" ">
                         Competitive Pricing | Quick Turnaround | Professional
                         Output
@@ -88,7 +88,7 @@ const Marketing = () => {
               </div>
 
               {/* Right */}
-              <div className="basis-[60%] mt-10 lg:mt-[250px] lg:z-10">
+              <div className="basis-[40%] mt-10 lg:mt-[150px] lg:z-10">
                 <div className="bg-c_blue px-10 pb-10 pt-10 rounded-md w-[90%] mx-auto">
                   <h2 className="font-bold text-[30px] text-center capitalize">
                     ENQUIRE NOW
@@ -134,7 +134,7 @@ const Marketing = () => {
                         What Services Can We Assist You With?
                       </h3>
 
-                      <div className="flex flex-wrap">
+                      <div className="flex flex-col">
                         <div className="form-control">
                           <label className="label justify-start gap-3 cursor-pointer">
                             <input
@@ -236,8 +236,9 @@ const Marketing = () => {
 
                     <div className="mt-5">
                       <textarea
-                        className="textarea textarea-bordered w-full h-[160px]"
+                        className="textarea textarea-bordered w-full p-3 border"
                         placeholder="Please share any special instructions for us to analyze your project requirement."
+                        rows={3}
                       ></textarea>
                     </div>
 

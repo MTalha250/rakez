@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { ImagesSlider } from "@/components/ui/images-slider";
-import img1 from "@/assets/s1.webp";
-import img2 from "@/assets/s2.webp";
-import img3 from "@/assets/s3.webp";
+import img1 from "@/assets/sl1.jpg";
+import img2 from "@/assets/sl2.jpg";
+import img3 from "@/assets/sl3.jpg";
 export default function Slider() {
   const images = [img1, img2, img3];
   return (

@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="overflow-hidden relative bg-secondary pt-10 pb-20 px-8 md:px-16 text-white">
       <div className="w-full my-10 flex flex-wrap gap-10">
         <div className="w-[400px]">
-          <img src={logo} alt="" className="" />
+          <img src={logo} alt="" className="pr-20" />
           <p className="mt-5">
             Discover streamlined processes and expert guidance for seamless
             business setup in the vibrant city of Dubai. Start your journey

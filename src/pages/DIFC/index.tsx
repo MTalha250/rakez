@@ -6,7 +6,6 @@ import { FaChevronDown } from "react-icons/fa";
 import AboutDIFC from "@/components/DIFC/AboutDIFC";
 import ExploreDIFC from "@/components/DIFC/ExploreDIFC";
 import DIFCRequirements from "@/components/DIFC/DIFCRequirements";
-import DIFCBusinessActivities from "@/components/DIFC/DIFCBusinessActivities";
 import FAQ from "@/components/Home/faq_new/FAQ";
 import UpperNavbar from "@/components/common/UpperNavbar";
 import HomeUpperNavContent from "@/components/common/UpperNavbar/HomeUpperNavContent";
@@ -33,9 +32,9 @@ const DIFC = () => {
           <div className="absolute w-full h-full bg-gradient-to-b from-black/50 to-secondary"></div>
 
           <div className=" h-full">
-            <div className="flex flex-col lg:flex-row lg:items-center">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:px-10">
               {/* Left */}
-              <div className={`flex h-full flex-col basis-[50%]`}>
+              <div className={`flex h-full flex-col basis-[60%]`}>
                 {/* Content of hero */}
                 <div className="flex justify-start container max-sm:max-w-[300px] mt-16">
                   <motion.div
@@ -46,15 +45,21 @@ const DIFC = () => {
                     className="flex flex-col h-[85vh] items-center justify-center"
                   >
                     <h1
-                      className={`text-3xl sm:text-5xl text-primary font-semibold drop-shadow-2xl mb-5 text-center`}
+                      className={`text-3xl sm:text-5xl text-primary font-semibold drop-shadow-2xl mb-5`}
                     >
                       Transforming Ideas into Reality
                     </h1>
 
                     <h3
-                      className={`mb-5 text-lg md:text-xl font-medium text-neutral-100 text-center z-50`}
+                      className={`mb-5 text-lg font-medium text-neutral-100 z-10`}
                     >
-                      Accelerating Growth Through DIFC's Tech Start-up Package
+                      Utilize DIFC's Tech Start-up Package to accelerate your
+                      venture's growth, leveraging specialized resources and
+                      support. Seamlessly integrate into a dynamic ecosystem,
+                      positioning your startup for success in the competitive
+                      tech industry. Propel your expansion efforts forward with
+                      strategic assistance and innovative opportunities provided
+                      by DIFC.
                     </h3>
                     <div className="z-50">
                       <FaChevronDown className="text-green text-[35px]" />
@@ -127,7 +132,7 @@ const DIFC = () => {
 
       <DIFCRequirements />
 
-      <DIFCBusinessActivities />
+      {/* <DIFCBusinessActivities /> */}
 
       <FAQ bg="bg-c_blue/50" />
     </>

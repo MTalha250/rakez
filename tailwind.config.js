@@ -26,10 +26,10 @@ module.exports = {
       colors: {
         primary: "#FACF11",
         secondary: "#000000",
-        tertiary: "#EF4444",
+        tertiary: "#EDBC0D",
 
-        c_blue: "#CDE8F9",
-        c_orangish: "#EF4444",
+        c_blue: "#FEFDF5",
+        c_orangish: "#EDBC0D",
         c_greenish: "#0C6460",
       },
       keyframes: {

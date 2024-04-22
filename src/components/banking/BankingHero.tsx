@@ -22,7 +22,7 @@ const BankingHero = () => {
           <div className="absolute w-full h-full bg-gradient-to-b from-black/50 to-secondary"></div>
 
           <div className=" h-full">
-            <div className="flex flex-col lg:flex-row lg:items-center">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:px-10">
               {/* Left */}
               <div className={`flex h-full flex-col basis-[50%]`}>
                 {/* Content of hero */}
