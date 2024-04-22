@@ -6,6 +6,7 @@ import {
   FormField,
   FormItem,
   FormLabel,
+  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -15,9 +16,9 @@ import { z } from "zod";
 import Select from "react-select";
 
 const formSchema = z.object({
-  fullName: z.string(),
-  email: z.string(),
-  phone: z.number(),
+  fullName: z.string().min(3, { message: "Name is required" }),
+  email: z.string().email(),
+  phone: z.string().min(10, { message: "Phone number is required" }),
   message: z.string(),
 });
 
@@ -36,7 +37,7 @@ const Contact = () => {
     defaultValues: {
       fullName: "",
       email: "",
-      phone: 0,
+      phone: "",
       message: "",
     },
   });
@@ -92,8 +93,10 @@ const Contact = () => {
                               {...field}
                               className="border-0 border-b rounded-none px-0 font-light"
                               placeholder="Type Full Name..."
+                              type="text"
                             />
                           </FormControl>
+                          <FormMessage />
                         </FormItem>
                         <FormItem>
                           <FormLabel>Email</FormLabel>
@@ -101,8 +104,11 @@ const Contact = () => {
                             <Input
                               className="border-0 border-b rounded-none px-0 font-light"
                               placeholder="Type Email..."
+                              {...field}
+                              type="email"
                             />
                           </FormControl>
+                          <FormMessage />
                         </FormItem>
                         <FormItem>
                           <FormLabel>Phone Number</FormLabel>
@@ -111,8 +117,10 @@ const Contact = () => {
                               placeholder="Type Phone Number..."
                               className="border-0 border-b rounded-none px-0 font-light"
                               {...field}
+                              type="text"
                             />
                           </FormControl>
+                          <FormMessage />
                         </FormItem>
                         <div className="text-black">
                           <FormLabel>Services</FormLabel>
@@ -128,6 +136,7 @@ const Contact = () => {
                               {...field}
                             />
                           </FormControl>
+                          <FormMessage />
                         </FormItem>
                       </>
                     )}
