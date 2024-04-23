@@ -7,8 +7,12 @@ import NormalParagraph from "@/components/common/Paragraphs/Paragraphs";
 import Calendly from "@/components/meeting/Calendly";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 const page = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <UpperNavbar>

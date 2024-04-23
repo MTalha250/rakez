@@ -11,7 +11,9 @@ import Persons from "@/components/Home/persons/Persons";
 
 const page = () => {
   const [toggle, setToggle] = useState(false);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   useEffect(() => {
     const timer = setTimeout(() => {
       setToggle(true);

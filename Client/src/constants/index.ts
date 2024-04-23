@@ -6,7 +6,7 @@ export const navLinks = [
 
   {
     href: "/about",
-    label: "About Us",
+    label: "Company Setup",
     children: [
       {
         href: "/about/ras-al-khaimah",

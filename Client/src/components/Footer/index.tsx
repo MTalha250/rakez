@@ -14,7 +14,6 @@ const Footer = () => {
         </div>
         <div className="w-[400px]">
           <ul className="space-y-2">
-            <li className="font-bold">800-LICENSE (542 3673)</li>
             <li className="py-3">
               If you are calling from outside the UAE, please contact us on
             </li>

@@ -3,8 +3,63 @@ import Flag from "@/assets/flag.jpg";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
 import Select from "react-select";
+import { useState, ChangeEvent, FormEvent } from "react";
+
+interface FormData {
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  service: { value: string; label: string } | null;
+  message: string;
+}
 
 const BankingHero = () => {
+  const [formData, setFormData] = useState<FormData>({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    service: null,
+    message: "",
+  });
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | { value: string }>,
+    fieldName: keyof FormData
+  ) => {
+    setFormData({
+      ...formData,
+      [fieldName]: e.target ? e.target.value : e,
+    });
+  };
+
+  const handleServiceChange = (
+    selectedOption: { value: string; label: string } | null
+  ) => {
+    setFormData({
+      ...formData,
+      service: selectedOption,
+    });
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const isAnyFieldEmpty = Object.values(formData).some(
+      (value) => value === ""
+    );
+    if (isAnyFieldEmpty) {
+      alert("Please fill in all fields.");
+    } else {
+      console.log(formData);
+      setFormData({
+        fullName: "",
+        email: "",
+        phoneNumber: "",
+        service: null,
+        message: "",
+      });
+    }
+  };
+
   return (
     <div>
       {/* hero section  */}
@@ -22,11 +77,11 @@ const BankingHero = () => {
           <div className="absolute w-full h-full bg-gradient-to-b from-black/50 to-secondary"></div>
 
           <div className=" h-full">
-            <div className="flex flex-col lg:flex-row lg:items-center lg:px-10">
+            <div className="flex flex-col lg:flex-row lg:px-10">
               {/* Left */}
               <div className={`flex h-full flex-col basis-[50%]`}>
                 {/* Content of hero */}
-                <div className="flex justify-start container max-sm:max-w-[300px] mt-16">
+                <div className="flex justify-start container max-sm:max-w-[300px]">
                   <motion.div
                     variants={variants}
                     initial="initial"
@@ -55,25 +110,31 @@ const BankingHero = () => {
               </div>
 
               {/* Right */}
-              <div className="basis-[50%] mt-10 lg:mt-[200px] lg:z-10">
-                <div className="bg-neutral-100 px-10 pb-10 pt-10 rounded-md mx-5 lg:w-[70%] lg:mx-auto">
+              <div className="basis-[50%] mt-20 lg:mt-40 lg:z-10">
+                <div className="bg-neutral-100/90 px-10 pb-10 pt-10 rounded-md mx-5 lg:w-[70%] lg:mx-auto">
                   <h2 className="font-bold text-[30px] text-center capitalize">
                     Apply for an account in minutes
                   </h2>
 
-                  <form action="" className="mt-7">
+                  <form onSubmit={handleSubmit} className="mt-7">
                     <div className="flex flex-col gap-10">
                       <input
                         type="text"
+                        name="fullName"
+                        value={formData.fullName}
+                        onChange={(e) => handleChange(e, "fullName")}
                         placeholder="Type Full Name"
-                        className="input input-bordered input-md w-full "
+                        className="input input-bordered input-md w-full p-2 rounded-lg"
                       />
                     </div>
                     <div className="mt-5">
                       <input
                         type="text"
+                        name="email"
+                        value={formData.email}
+                        onChange={(e) => handleChange(e, "email")}
                         placeholder="Type Email"
-                        className="input input-bordered input-md w-full "
+                        className="input input-bordered input-md w-full p-2 rounded-lg"
                       />
                     </div>
                     <div className="mt-5">
@@ -90,19 +151,26 @@ const BankingHero = () => {
                         </div>
                         <input
                           type="text"
-                          className="grow"
+                          name="phoneNumber"
+                          value={formData.phoneNumber}
+                          onChange={(e) => handleChange(e, "phoneNumber")}
+                          className="input input-bordered input-md w-full p-2 rounded-lg"
                           placeholder="Phone Number"
                         />
                       </label>
                     </div>
                     <div className="mt-5">
                       <Select
+                        name="service"
+                        value={formData.service}
+                        onChange={handleServiceChange}
                         options={[
                           { value: "chocolate", label: "Banking" },
                           { value: "strawberry", label: "Business Setup" },
                           { value: "vanilla", label: "I want only a visa" },
                         ]}
                         placeholder="Select a service required"
+                        className="input input-bordered input-md w-full p-2 rounded-lg"
                         styles={{
                           control: (baseStyles) => ({
                             ...baseStyles,
@@ -113,13 +181,19 @@ const BankingHero = () => {
                     </div>
                     <div className="mt-5">
                       <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={(e) => handleChange(e, "message")}
                         placeholder="Type your message"
-                        className="textarea textarea-bordered textarea-lg w-full"
+                        className="input input-bordered input-md w-full p-2 rounded-lg"
                       ></textarea>
                     </div>
 
                     <div className="mt-5 flex justify-end">
-                      <button className="btn px-5 py-3 rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white">
+                      <button
+                        type="submit"
+                        className="btn px-5 py-3 rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white"
+                      >
                         Submit
                       </button>
                     </div>

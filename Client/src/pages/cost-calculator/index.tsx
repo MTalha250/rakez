@@ -3,8 +3,12 @@ import HeroBanner from "@/components/common/Banner/HeroBanner";
 import BussinessSetupCostNow from "@/components/Home/BussinessSetupCostNow";
 import UpperNavbar from "@/components/common/UpperNavbar";
 import HomeUpperNavContent from "@/components/common/UpperNavbar/HomeUpperNavContent";
+import { useEffect } from "react";
 
 const page = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="mb-10">
       <UpperNavbar>

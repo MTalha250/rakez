@@ -9,23 +9,82 @@ import OurTeam from "@/components/marketing/OurTeam";
 import BrandInfo from "@/components/marketing/BrandInfo";
 import ContactBox from "@/components/marketing/ContactBox";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+interface FormData {
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  services: string[];
+  message: string;
+}
 
 const Marketing = () => {
+  const [formData, setFormData] = useState<FormData>({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    services: [],
+    message: "",
+  });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { checked, value } = e.target;
+    if (checked) {
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        services: [...prevFormData.services, value],
+      }));
+    } else {
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        services: prevFormData.services.filter((service) => service !== value),
+      }));
+    }
+  };
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (
+      formData.fullName === "" ||
+      formData.email === "" ||
+      formData.phoneNumber === "" ||
+      formData.services.length === 0 ||
+      formData.message === ""
+    ) {
+      alert("Please fill all the fields");
+      return;
+    }
+    console.log(formData);
+    setFormData({
+      fullName: "",
+      email: "",
+      phoneNumber: "",
+      services: [],
+      message: "",
+    });
+  };
+
   return (
     <>
       <UpperNavbar>
         <HomeUpperNavContent />
       </UpperNavbar>
-
-      {/* hero section  */}
-      {/* <div className="mb-10">
-        <div className="flex flex-col md:flex-row">
-          <MarketingHeroLeft />
-          <MarketingFormRight />
-        </div>
-      </div> */}
-
-      {/* hero section  */}
+      {/* hero section */}
       <div className="">
         <div className="">
           <div className="w-full h-[110vh] lg:h-[120vh] absolute">
@@ -46,9 +105,9 @@ const Marketing = () => {
                 {/* Content of hero */}
                 <div className="flex justify-start ld:px-10 px-5 mt-10">
                   <motion.div
-                    variants={variants}
                     initial="initial"
                     whileInView="animate"
+                    variants={variants}
                     viewport={{ once: true }}
                     className="flex flex-col h-[100vh] items-center justify-center"
                   >
@@ -94,19 +153,25 @@ const Marketing = () => {
                     ENQUIRE NOW
                   </h2>
 
-                  <form action="" className="mt-7">
-                    <div className="flex flex-col gap-10">
+                  <form onSubmit={handleSubmit} className="mt-7">
+                    <div className="mt-5">
                       <input
                         type="text"
-                        placeholder="Type Full Name"
-                        className="input input-bordered input-md w-full "
+                        name="fullName"
+                        value={formData.fullName}
+                        onChange={handleInputChange}
+                        placeholder="Full Name"
+                        className="input input-bordered input-md w-full p-2 rounded-lg"
                       />
                     </div>
                     <div className="mt-5">
                       <input
                         type="text"
-                        placeholder="Type Email"
-                        className="input input-bordered input-md w-full "
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        placeholder="Email"
+                        className="input input-bordered input-md w-full p-2 rounded-lg"
                       />
                     </div>
                     <div className="mt-5">
@@ -123,7 +188,10 @@ const Marketing = () => {
                         </div>
                         <input
                           type="text"
-                          className="grow"
+                          name="phoneNumber"
+                          value={formData.phoneNumber}
+                          onChange={handleInputChange}
+                          className="input input-bordered input-md w-full p-2 rounded-lg"
                           placeholder="Phone Number"
                         />
                       </label>
@@ -135,107 +203,37 @@ const Marketing = () => {
                       </h3>
 
                       <div className="flex flex-col">
-                        <div className="form-control">
-                          <label className="label justify-start gap-3 cursor-pointer">
-                            <input
-                              type="checkbox"
-                              className="checkbox checkbox-sm"
-                            />
-                            <span className="label-text">
-                              Company Logo and Branding
-                            </span>
-                          </label>
-                        </div>
-                        <div className="form-control">
-                          <label className="label justify-start gap-3 cursor-pointer">
-                            <input
-                              type="checkbox"
-                              className="checkbox checkbox-sm"
-                            />
-                            <span className="label-text">
-                              Website for my Business
-                            </span>
-                          </label>
-                        </div>
-                        <div className="form-control">
-                          <label className="label justify-start gap-3 cursor-pointer">
-                            <input
-                              type="checkbox"
-                              className="checkbox checkbox-sm"
-                            />
-                            <span className="label-text">
-                              Rank Top on Google Search
-                            </span>
-                          </label>
-                        </div>
-                        <div className="form-control">
-                          <label className="label justify-start gap-3 cursor-pointer">
-                            <input
-                              type="checkbox"
-                              className="checkbox checkbox-sm"
-                            />
-                            <span className="label-text">
-                              Generate More Quality Leads
-                            </span>
-                          </label>
-                        </div>
-                        <div className="form-control">
-                          <label className="label justify-start gap-3 cursor-pointer">
-                            <input
-                              type="checkbox"
-                              className="checkbox checkbox-sm"
-                            />
-                            <span className="label-text">
-                              Manage Social Media Accounts by Regular and
-                              Consistent Posting
-                            </span>
-                          </label>
-                        </div>
-                        <div className="form-control">
-                          <label className="label justify-start gap-3 cursor-pointer">
-                            <input
-                              type="checkbox"
-                              className="checkbox checkbox-sm"
-                            />
-                            <span className="label-text">
-                              Content Management
-                            </span>
-                          </label>
-                        </div>
-                        <div className="form-control">
-                          <label className="label justify-start gap-3 cursor-pointer">
-                            <input
-                              type="checkbox"
-                              className="checkbox checkbox-sm"
-                            />
-                            <span className="label-text">
-                              Get Featured on the Media
-                            </span>
-                          </label>
-                        </div>
-                        <div className="form-control">
-                          <label className="label justify-start gap-3 cursor-pointer">
-                            <input
-                              type="checkbox"
-                              className="checkbox checkbox-sm"
-                            />
-                            <span className="label-text">Event Management</span>
-                          </label>
-                        </div>
-                        <div className="form-control">
-                          <label className="label justify-start gap-3 cursor-pointer">
-                            <input
-                              type="checkbox"
-                              className="checkbox checkbox-sm"
-                            />
-                            <span className="label-text">Other</span>
-                          </label>
-                        </div>
+                        {[
+                          "Company Logo and Branding",
+                          "Website for my Business",
+                          "Rank Top on Google Search",
+                          "Generate More Quality Leads",
+                          "Manage Social Media Accounts by Regular and Consistent Posting",
+                          "Content Management",
+                          "Get Featured on the Media",
+                          "Event Management",
+                          "Other",
+                        ].map((service, index) => (
+                          <div className="form-control" key={index}>
+                            <label className="label justify-start gap-3 cursor-pointer">
+                              <input
+                                type="checkbox"
+                                className="checkbox checkbox-sm"
+                                value={service}
+                                onChange={handleCheckboxChange}
+                              />
+                              <span className="label-text">{service}</span>
+                            </label>
+                          </div>
+                        ))}
                       </div>
                     </div>
 
                     <div className="mt-5">
                       <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleInputChange}
                         className="textarea textarea-bordered w-full p-3 border"
                         placeholder="Please share any special instructions for us to analyze your project requirement."
                         rows={3}
@@ -254,13 +252,9 @@ const Marketing = () => {
           </div>
         </div>
       </div>
-
       <Packages />
-
       <OurTeam />
-
       <BrandInfo />
-
       <ContactBox />
     </>
   );

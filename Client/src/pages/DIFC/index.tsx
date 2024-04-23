@@ -9,8 +9,12 @@ import DIFCRequirements from "@/components/DIFC/DIFCRequirements";
 import FAQ from "@/components/Home/faq_new/FAQ";
 import UpperNavbar from "@/components/common/UpperNavbar";
 import HomeUpperNavContent from "@/components/common/UpperNavbar/HomeUpperNavContent";
+import { useEffect } from "react";
 
 const DIFC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <UpperNavbar>
