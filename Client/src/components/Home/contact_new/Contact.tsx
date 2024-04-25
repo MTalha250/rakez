@@ -20,15 +20,16 @@ const formSchema = z.object({
   email: z.string().email(),
   phone: z.string().min(10, { message: "Phone number is required" }),
   message: z.string(),
+  service: z.string(),
 });
 
 const options = [
-  { value: "Business Setup", label: "Business Setup" },
-  { value: "Banikng", label: "Banikng" },
-  { value: "Marketing", label: "Marketing" },
-  { value: "Pro Services", label: "Pro Services" },
-  { value: "Licence Renewa", label: "Licence Renewal" },
-  { value: "Virtual Office", label: "Virtual Office" },
+  "Business Setup",
+  "Banking",
+  "Marketing",
+  "Pro Services",
+  "License Renewal",
+  "Virtual Office",
 ];
 
 const Contact = () => {
@@ -39,6 +40,7 @@ const Contact = () => {
       email: "",
       phone: "",
       message: "",
+      service: "",
     },
   });
 
@@ -85,60 +87,88 @@ const Contact = () => {
                     control={form.control}
                     name="fullName"
                     render={({ field }) => (
-                      <>
-                        <FormItem>
-                          <FormLabel>Full Name</FormLabel>
-                          <FormControl>
-                            <Input
-                              {...field}
-                              className="border-0 border-b rounded-none px-0 font-light"
-                              placeholder="Type Full Name..."
-                              type="text"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                        <FormItem>
-                          <FormLabel>Email</FormLabel>
-                          <FormControl>
-                            <Input
-                              className="border-0 border-b rounded-none px-0 font-light"
-                              placeholder="Type Email..."
-                              {...field}
-                              type="email"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                        <FormItem>
-                          <FormLabel>Phone Number</FormLabel>
-                          <FormControl>
-                            <Input
-                              placeholder="Type Phone Number..."
-                              className="border-0 border-b rounded-none px-0 font-light"
-                              {...field}
-                              type="text"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                        <div className="text-black">
-                          <FormLabel>Services</FormLabel>
-                          <Select options={options} className="font-light" />
-                        </div>
-
-                        <FormItem>
-                          <FormLabel>Message</FormLabel>
-                          <FormControl>
-                            <Textarea
-                              className="border-0 border-b rounded-none px-0 font-light"
-                              placeholder="Type Message..."
-                              {...field}
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      </>
+                      <FormItem>
+                        <FormLabel>Full Name</FormLabel>
+                        <FormControl>
+                          <Input
+                            {...field}
+                            className="border-0 border-b rounded-none px-0 font-light"
+                            placeholder="Type Full Name..."
+                            type="text"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Email</FormLabel>
+                        <FormControl>
+                          <Input
+                            className="border-0 border-b rounded-none px-0 font-light"
+                            placeholder="Type Email..."
+                            {...field}
+                            type="email"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="phone"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Phone Number</FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Type Phone Number..."
+                            className="border-0 border-b rounded-none px-0 font-light"
+                            {...field}
+                            type="text"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="service"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Service</FormLabel>
+                        <FormControl>
+                          <Select
+                            options={options}
+                            className="font-light"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Message</FormLabel>
+                        <FormControl>
+                          <Textarea
+                            className="border-0 border-b rounded-none px-0 font-light"
+                            placeholder="Type Message..."
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
                     )}
                   />
                   <div className="flex justify-end">
