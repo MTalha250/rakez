@@ -10,6 +10,8 @@ import BrandInfo from "@/components/marketing/BrandInfo";
 import ContactBox from "@/components/marketing/ContactBox";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 interface FormData {
   fullName: string;
@@ -20,6 +22,7 @@ interface FormData {
 }
 
 const Marketing = () => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
@@ -57,7 +60,7 @@ const Marketing = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (
       formData.fullName === "" ||
@@ -66,17 +69,34 @@ const Marketing = () => {
       formData.services.length === 0 ||
       formData.message === ""
     ) {
-      alert("Please fill all the fields");
+      toast.error("Please fill all the fields");
       return;
     }
-    console.log(formData);
-    setFormData({
-      fullName: "",
-      email: "",
-      phoneNumber: "",
-      services: [],
-      message: "",
-    });
+    setLoading(true);
+    try {
+      await axios.post(
+        `${import.meta.env.VITE_BASE_URI}/contact/createContact`,
+        {
+          name: formData.fullName,
+          email: formData.email,
+          phone: formData.phoneNumber,
+          message: formData.message,
+          services: formData.services,
+        }
+      );
+      toast.success("Message sent successfully");
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setFormData({
+        fullName: "",
+        email: "",
+        phoneNumber: "",
+        services: [],
+        message: "",
+      });
+    }
+    setLoading(false);
   };
 
   return (
@@ -242,7 +262,7 @@ const Marketing = () => {
 
                     <div className="mt-5 flex justify-end">
                       <button className="btn px-5 py-3 rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white">
-                        Submit
+                        {loading ? "Loading..." : "Submit"}
                       </button>
                     </div>
                   </form>

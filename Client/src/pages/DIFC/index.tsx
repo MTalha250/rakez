@@ -9,12 +9,45 @@ import DIFCRequirements from "@/components/DIFC/DIFCRequirements";
 import FAQ from "@/components/Home/faq_new/FAQ";
 import UpperNavbar from "@/components/common/UpperNavbar";
 import HomeUpperNavContent from "@/components/common/UpperNavbar/HomeUpperNavContent";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 const DIFC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [loading, setLoading] = useState(false);
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    if (fullName === "" || email === "" || phoneNumber === "") {
+      toast.error("Please fill in all fields.");
+      return;
+    }
+    setLoading(true);
+    try {
+      await axios.post(
+        `${import.meta.env.VITE_BASE_URI}/contact/createContact`,
+        {
+          name: fullName,
+          email: email,
+          phone: phoneNumber,
+        }
+      );
+      toast.success("Message sent successfully");
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setFullName("");
+      setEmail("");
+      setPhoneNumber("");
+    }
+    setLoading(false);
+  };
+
   return (
     <>
       <UpperNavbar>
@@ -81,13 +114,14 @@ const DIFC = () => {
                   <h2 className="font-bold text-[30px] text-center capitalize text-c_orangish">
                     Get a Call Back within 1 Minute
                   </h2>
-
-                  <form action="" className="mt-7">
+                  <form onSubmit={handleSubmit} className="mt-7">
                     <div className="flex flex-col gap-10">
                       <input
                         type="text"
                         placeholder="Type Full Name"
                         className="input input-bordered input-md w-full "
+                        value={fullName}
+                        onChange={(e) => setFullName(e.target.value)}
                       />
                     </div>
                     <div className="mt-5">
@@ -95,6 +129,8 @@ const DIFC = () => {
                         type="text"
                         placeholder="Type Email"
                         className="input input-bordered input-md w-full "
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
                     <div className="mt-5">
@@ -113,13 +149,18 @@ const DIFC = () => {
                           type="text"
                           className="grow"
                           placeholder="Phone Number"
+                          value={phoneNumber}
+                          onChange={(e) => setPhoneNumber(e.target.value)}
                         />
                       </label>
                     </div>
 
                     <div className="mt-5 flex justify-end">
-                      <button className="btn px-5 py-3 rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white">
-                        Submit
+                      <button
+                        type="submit"
+                        className="btn px-5 py-3 rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white"
+                      >
+                        {loading ? "Loading..." : "Get a Call Back"}
                       </button>
                     </div>
                   </form>

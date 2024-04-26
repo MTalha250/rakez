@@ -14,13 +14,16 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import Select from "react-select";
+import { useState } from "react";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const formSchema = z.object({
   fullName: z.string().min(3, { message: "Name is required" }),
   email: z.string().email(),
   phone: z.string().min(10, { message: "Phone number is required" }),
-  message: z.string(),
-  service: z.string(),
+  message: z.string().min(3, { message: "Message is required" }),
+  service: z.object({ value: z.string().min(3), label: z.string().min(3) }),
 });
 
 const options = [
@@ -33,6 +36,7 @@ const options = [
 ];
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -40,12 +44,33 @@ const Contact = () => {
       email: "",
       phone: "",
       message: "",
-      service: "",
+      service: {
+        value: "",
+        label: "Select Service",
+      },
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setLoading(true);
+    try {
+      await axios.post(
+        `${import.meta.env.VITE_BASE_URI}/contact/createContact`,
+        {
+          name: values.fullName,
+          email: values.email,
+          phone: values.phone,
+          message: values.message,
+          services: [values.service.value],
+        }
+      );
+      toast.success("Message sent successfully");
+    } catch (error) {
+      console.log(error);
+    } finally {
+      form.reset();
+    }
+    setLoading(false);
   }
 
   return (
@@ -145,12 +170,14 @@ const Contact = () => {
                         <FormLabel>Service</FormLabel>
                         <FormControl>
                           <Select
-                            options={options}
+                            options={options.map((option) => ({
+                              value: option,
+                              label: option,
+                            }))}
                             className="font-light"
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
                       </FormItem>
                     )}
                   />
@@ -173,7 +200,7 @@ const Contact = () => {
                   />
                   <div className="flex justify-end">
                     <Button type="submit" className="bg-secondary px-10">
-                      Submit
+                      {loading ? "Loading..." : "Submit"}
                     </Button>
                   </div>
                 </form>

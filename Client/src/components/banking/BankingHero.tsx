@@ -4,6 +4,9 @@ import { variants } from "@/constants";
 import { motion } from "framer-motion";
 import Select from "react-select";
 import { useState, ChangeEvent, FormEvent } from "react";
+import axios from "axios";
+import toast from "react-hot-toast";
+import { set } from "lodash";
 
 interface FormData {
   fullName: string;
@@ -14,6 +17,7 @@ interface FormData {
 }
 
 const BankingHero = () => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
@@ -41,22 +45,41 @@ const BankingHero = () => {
     });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const isAnyFieldEmpty = Object.values(formData).some(
       (value) => value === ""
     );
     if (isAnyFieldEmpty) {
-      alert("Please fill in all fields.");
+      toast.error("Please fill in all fields.");
+    } else if (!formData.service) {
+      toast.error("Please select a service.");
     } else {
-      console.log(formData);
-      setFormData({
-        fullName: "",
-        email: "",
-        phoneNumber: "",
-        service: null,
-        message: "",
-      });
+      setLoading(true);
+      try {
+        await axios.post(
+          `${import.meta.env.VITE_BASE_URI}/contact/createContact`,
+          {
+            name: formData.fullName,
+            email: formData.email,
+            phone: formData.phoneNumber,
+            message: formData.message,
+            services: [formData.service?.value],
+          }
+        );
+        toast.success("Message sent successfully");
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setFormData({
+          fullName: "",
+          email: "",
+          phoneNumber: "",
+          service: null,
+          message: "",
+        });
+      }
+      setLoading(false);
     }
   };
 
@@ -194,7 +217,7 @@ const BankingHero = () => {
                         type="submit"
                         className="btn px-5 py-3 rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white"
                       >
-                        Submit
+                        {loading ? "Loading..." : "Submit"}
                       </button>
                     </div>
                   </form>
