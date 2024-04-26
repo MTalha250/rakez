@@ -6,7 +6,6 @@ import Select from "react-select";
 import { useState, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { set } from "lodash";
 
 interface FormData {
   fullName: string;
