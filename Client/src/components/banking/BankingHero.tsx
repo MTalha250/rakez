@@ -1,5 +1,4 @@
 import container from "@/assets/container.jpg";
-import Flag from "@/assets/flag.jpg";
 import { variants } from "@/constants";
 import { motion } from "framer-motion";
 import Select from "react-select";
@@ -66,7 +65,7 @@ const BankingHero = () => {
             services: [formData.service?.value],
           }
         );
-        toast.success("Message sent successfully");
+        toast.success("The form has been submitted successfully.");
       } catch (error) {
         console.log(error);
       } finally {
@@ -103,29 +102,36 @@ const BankingHero = () => {
               {/* Left */}
               <div className={`flex h-full flex-col basis-[50%]`}>
                 {/* Content of hero */}
-                <div className="flex justify-start container max-sm:max-w-[300px]">
+                <div className="flex justify-start container">
                   <motion.div
                     variants={variants}
                     initial="initial"
                     whileInView="animate"
                     viewport={{ once: true }}
-                    className="flex flex-col h-[85vh] items-center justify-center"
+                    className="flex flex-col h-[85vh] items-center justify-center mt-20 sm:mt-0"
                   >
                     <h1
                       className={`text-3xl sm:text-5xl text-primary font-semibold drop-shadow-2xl mb-5`}
                     >
-                      Banking Solutions in Dubai
+                      Opening Business Bank Account in Dubai
                     </h1>
 
                     <h3
-                      className={`mb-5 text-lg md:text-xl font-medium text-neutral-100 z-50`}
+                      className={`mb-5 text-sm sm:text-base font-medium text-neutral-100 z-50 text-justify`}
                     >
-                      Unlock your business's potential with exclusive banking
-                      solutions in Dubai. Tailored financial products, digital
-                      innovations, and Islamic banking options cater to your
-                      diverse needs. Secure your future with strategic wealth
-                      management and access to government support and capital
-                      markets for seamless expansion.
+                      We at Serv Corps Company House are ready to help you set
+                      up your business in Dubai as easily as possible. Banking
+                      solutions are an essential component of beginning and
+                      expanding your business. For this reason, we provide
+                      specialized financial support to match your requirements.
+                      Whether you're aiming to grow or are just getting started
+                      Our staff will assist you with opening a business account
+                      in Dubai and make sure you have access to the appropriate
+                      banking services for your company. We take care of
+                      everything, from account setup to transaction management,
+                      so you can concentrate on what really matters—expanding
+                      your company. It has never been simpler to bank in Dubai
+                      thanks to our knowledge and individualized approach.
                     </h3>
                   </motion.div>
                 </div>
@@ -161,16 +167,6 @@ const BankingHero = () => {
                     </div>
                     <div className="mt-5">
                       <label className="input input-bordered flex items-center gap-2">
-                        <div className="border-r pr-3 flex items-center gap-1">
-                          <div className="w-[20px] h-[20px] relative">
-                            <img
-                              src={Flag}
-                              className="object-cover w-full h-full"
-                              alt="no-image"
-                            />
-                          </div>
-                          +971
-                        </div>
                         <input
                           type="text"
                           name="phoneNumber"
@@ -187,9 +183,12 @@ const BankingHero = () => {
                         value={formData.service}
                         onChange={handleServiceChange}
                         options={[
-                          { value: "chocolate", label: "Banking" },
-                          { value: "strawberry", label: "Business Setup" },
-                          { value: "vanilla", label: "I want only a visa" },
+                          { value: "Banking", label: "Banking" },
+                          { value: "Business Setup", label: "Business Setup" },
+                          {
+                            value: "I want only a visa",
+                            label: "I want only a visa",
+                          },
                         ]}
                         placeholder="Select a service required"
                         className="input input-bordered input-md w-full p-2 rounded-lg"
@@ -214,9 +213,9 @@ const BankingHero = () => {
                     <div className="mt-5 flex justify-end">
                       <button
                         type="submit"
-                        className="btn px-5 py-3 rounded-tl-[30px] rounded-br-[30px] bg-c_orangish text-white"
+                        className="btn px-5 py-3 rounded-tl-[30px] rounded-br-[30px] bg-[#D5004B] text-white"
                       >
-                        {loading ? "Loading..." : "Submit"}
+                        {loading ? "Loading..." : "Book a Free Consultation"}
                       </button>
                     </div>
                   </form>

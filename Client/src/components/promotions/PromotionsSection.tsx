@@ -57,7 +57,7 @@ const data = [
       "Seamless digital documentation submission",
       "Banking Assistance",
     ],
-    navLink: "/banking",
+    navLink: "/business bank account solution in Dubai",
   },
   // {
   //   title: "Start Your Business in Sharjah Free Zone",

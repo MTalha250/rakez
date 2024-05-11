@@ -9,7 +9,11 @@ const BankingDes = () => {
     <div className="pt-32">
       <ContainerWrapper>
         {" "}
-        <Heading1 title="Premium Banking Solutions" classes="text-center" />
+        <Heading1
+          title="Business Bank Account
+Solution in Dubai"
+          classes="text-center"
+        />
       </ContainerWrapper>
 
       <div className="bg-primary/5 py-12">

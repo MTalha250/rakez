@@ -10,10 +10,15 @@ const AccountApplication = () => {
     <div className="py-20">
       <ContainerWrapper>
         <Heading1
-          title="Submit Your Application to Activate Your Corporate Account"
+          title="Submit your application to activate your corporate bank account in
+          dubai"
           classes="text-center"
         />
-        <NormalParagraph text="Take the first step towards securing your corporate account in Dubai by submitting your application today. Our streamlined process ensures swift activation, backed by personalized service tailored to your business needs. Experience seamless banking with us." />
+        <NormalParagraph
+          text="Apply now to get closer to opening your business bank account in Dubai. Our
+simple process ensures fast activation and comes with personalized support customized to
+your business needs. With our help, open your business bank account in Dubai."
+        />
       </ContainerWrapper>
 
       <div className="bg-primary/5 py-12">
@@ -57,7 +62,7 @@ const AccountApplication = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <Link to="/meeting">
+            <Link to="/support">
               <button className="btn py-2 px-5 bg-tertiary border-none mt-10 text-white hover:text-black rounded-tl-[20px] rounded-br-[20px]">
                 Apply Now
               </button>
@@ -71,15 +76,15 @@ const AccountApplication = () => {
           <Heading1 title="Financial Solution" classes="text-center text-lg" />
           <NormalParagraph
             clasess="text-3xl leading-8 text-center mt-10 mb-20 text-neutral-500"
-            text="Dubai's Finest Financial Solution for Your Startup is Here! Get your Guaranteed Bank Account with Payment and POS Integration Only with Meydan Free Zone."
+            text="Dubai's Finest Financial Solution for Your Startup is Here! Get your Guaranteed Bank Account with Payment and POS Integration Only with SCC House."
           />
 
-          <div className="h-[80vh] w-full]">
+          <div className="h-[80vh] w-full">
             <div className="w-full rounded-tl-[100px] rounded-br-[100px] h-full relative">
               <img
                 src={partners}
                 alt="no-image"
-                className="rounded-tl-[100px] rounded-br-[100px] object-cover object-center h-full w-full"
+                className="rounded-tl-[100px] rounded-br-[100px] object-contain object-center h-full w-full"
               />
             </div>
           </div>
@@ -87,12 +92,6 @@ const AccountApplication = () => {
       </div>
 
       <ContainerWrapper classes="pt-14 md:pt-24">
-        <Heading1
-          title="Note By @Serv Corps Companies House"
-          classes="text-center"
-        />
-
-        <NormalParagraph text="All business licenses are inclusive of a shared desk facility, located inside The Meydan Hotel." />
         <NormalParagraph text="All Prices are inclusive of 5% VAT and government charges." />
       </ContainerWrapper>
     </div>

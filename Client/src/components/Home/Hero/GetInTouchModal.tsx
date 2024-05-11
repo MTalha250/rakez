@@ -95,9 +95,12 @@ const GetInTouchModal: FC<IModalProps> = ({ toggle, handleToggle }) => {
               <div className="mt-5">
                 <Select
                   options={[
-                    { value: "chocolate", label: "Banking" },
-                    { value: "strawberry", label: "Business Setup" },
-                    { value: "vanilla", label: "I want only a visa" },
+                    { value: "Banking", label: "Banking" },
+                    { value: "Business Setup", label: "Business Setup" },
+                    {
+                      value: "I want only a visa",
+                      label: "I want only a visa",
+                    },
                   ]}
                   placeholder="Select a service required"
                   styles={{

@@ -23,7 +23,10 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<Home />} />
-        <Route path="banking" element={<Banking />} />
+        <Route
+          path="business bank account solution in Dubai"
+          element={<Banking />}
+        />
         <Route path="contact-us" element={<Contact />} />
         <Route path="DIFC" element={<DIFC />} />
         <Route path="faq" element={<FAQ />} />

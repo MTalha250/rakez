@@ -48,7 +48,7 @@ export const navLinks = [
     label: "Promotions",
   },
   {
-    href: "/banking",
+    href: "/business bank account solution in Dubai",
     label: "Banking",
   },
   {

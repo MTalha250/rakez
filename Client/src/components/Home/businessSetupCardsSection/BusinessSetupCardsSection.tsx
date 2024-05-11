@@ -90,7 +90,7 @@ const BusinessSetupCardsSection = () => {
               </div>
             </Link>
 
-            <Link to={"/banking"}>
+            <Link to={"/business bank account solution in Dubai"}>
               <div>
                 <div className="h-[300px] w-full relative rounded-md cursor-pointer group">
                   <div className="absolute w-full h-full bg-black/40 z-40 rounded-md group-hover:scale-110 transition-all ease-in-out duration-500"></div>
