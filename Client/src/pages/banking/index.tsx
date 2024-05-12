@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
  
-const page = () => {
+const Bankingpage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -34,10 +34,9 @@ account solution in Dubai"
       </UpperNavbar>
       <BankingHero />
       <BankingDes />
-
       <AccountApplication />
     </>
   );
 };
 
-export default page;
+export default Bankingpage;

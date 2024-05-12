@@ -102,7 +102,7 @@ const BankingHero = () => {
               {/* Left */}
               <div className={`flex h-full flex-col basis-[50%]`}>
                 {/* Content of hero */}
-                <div className="flex justify-start container">
+                <div className="flex pt-20 justify-start container">
                   <motion.div
                     variants={variants}
                     initial="initial"

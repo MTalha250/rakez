@@ -18,13 +18,14 @@ import Leadership from "./pages/about/leadership";
 import Rakez from "./pages/about/rakez";
 import RasAlKhaimah from "./pages/about/ras-al-khaimah";
 import Zones from "./pages/about/zones";
+
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route
-          path="business bank account solution in Dubai"
+          path="business-bank-account-solution-in-dubai"
           element={<Banking />}
         />
         <Route path="contact-us" element={<Contact />} />
