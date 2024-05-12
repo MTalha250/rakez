@@ -6,7 +6,7 @@ import HomeUpperNavContent from "@/components/common/UpperNavbar/HomeUpperNavCon
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-
+ 
 const page = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
