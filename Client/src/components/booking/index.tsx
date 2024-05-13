@@ -35,15 +35,15 @@ const Booking = () => {
 
       <div className="mt-10">
         <div className="flex flex-col items-center">
-          <h1 className="text-center text-4xl font-bold text-primary">
+          <h4 className="text-center text-4xl font-bold text-primary">
             Book a Free Consultation
-          </h1>
+          </h4>
           <p className="my-5 text-center w-2/3 font-light">
-            Receive expert advice from our business consultants, well-versed in
-            all aspects of business setup and beyond – whether in the UAE, Saudi
-            Arabia, or Qatar. We’ll handle your registration, licensing, and
-            legal processes while giving you complete guidance, so book an
-            appointment today!
+            Get expert advice from our business consultants in Dubai, who know
+            everything about setting up a business and more. If you're in the
+            UAE, Saudi Arabia, or Qatar, book a free consultation! We'll handle
+            your licensing, registration, and legal steps, and guide you through
+            the entire process of your business setup in Dubai.
           </p>
           <Link
             to="/meeting"
@@ -63,19 +63,20 @@ const Booking = () => {
             </div>
           </div>
           <div className="space-y-5 px-10 text-neutral-200 flex-1">
-            <h1 className="text-4xl font-bold text-white">
-              The UAE <br />
-              Business <br />
+            <h4 className="text-4xl font-bold text-white">
+              The Business <br />
               Setup Guide <br />
-              <span className="text-green">2024</span>
-            </h1>
+              in UAE <br />
+              <span className="text-green">for 2024</span>
+            </h4>
             <p>
-              Discover the step-by-step procedures and essential considerations
-              you need to know before setting up a company in the UAE.
+              Learn everything you need to know about business setup in Dubai,
+              including step-by-step instructions for starting a business in the
+              UAE.
             </p>
             <p>
-              Get valuable insights and learn all the know-how to ensure a
-              successful business journey.
+              Get the important information and skills you need to make sure
+              your business in Dubai is successful.
             </p>
             <button className="px-8 py-2 border text-white bg-primary rounded-md w-fit">
               Download Now

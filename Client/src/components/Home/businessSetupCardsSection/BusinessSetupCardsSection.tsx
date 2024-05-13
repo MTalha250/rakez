@@ -28,7 +28,7 @@ const BusinessSetupCardsSection = () => {
             <Heading3 title="Serv Corps Companies House Zone" />
             <Heading1 title="Business Setup in Dubai" classes="text-primary" />
             <NormalParagraph
-              text="Discover streamlined processes and expert guidance for seamless business setup in the vibrant city of Dubai. Start your journey today!"
+              text="Explore easy steps and expert guidance for seamless business setup in Dubai. Start your business setup journey today with us."
               clasess="text-white text-center"
             />
           </div>
@@ -41,15 +41,15 @@ const BusinessSetupCardsSection = () => {
                   <div className="absolute w-full h-full bg-black/40 z-40 rounded-md group-hover:scale-110 transition-all ease-in-out duration-500"></div>
                   <img
                     src={dubaiImage1}
-                    alt="no-image"
+                    alt="Medyan Freezone"
                     className="absolute w-full h-full object-cover rounded-md group-hover:scale-110 transition-all ease-in-out duration-500"
                   />
                   <div className="flex flex-col h-full  items-center justify-end border-4 z-50 p-5">
-                    <h3 className="font-bold text-lg text-primary z-40 relative uppercase">
+                    <h4 className="font-bold text-lg text-primary z-40 relative uppercase">
                       Medyan Freezone
-                    </h3>
+                    </h4>
                     <NormalParagraph
-                      text="Unlock the Benefits of Dubai Freezones, Start Your Business Today with Flexibility, Efficiency, and Growth Opportunities!"
+                      text="Start your business in Dubai Freezones today! Enjoy flexibility, work more efficiently, and find many opportunities to grow."
                       clasess="text-white z-40 relative text-base"
                     />
                   </div>
@@ -68,15 +68,15 @@ const BusinessSetupCardsSection = () => {
                   <div className="absolute w-full h-full bg-black/60 z-40 rounded-md group-hover:scale-110 transition-all ease-in-out duration-500"></div>
                   <img
                     src={dubaiImage2}
-                    alt="no-image"
+                    alt="company formation in dubai mainland"
                     className="absolute w-full h-full object-cover rounded-md group-hover:scale-110 transition-all ease-in-out duration-500"
                   />
                   <div className="flex flex-col h-full  items-center justify-end border-4 z-50 p-5">
-                    <h3 className="font-bold text-lg text-primary z-40 relative uppercase">
+                    <h4 className="font-bold text-lg text-primary z-40 relative uppercase">
                       Dubai MainLand
-                    </h3>
+                    </h4>
                     <NormalParagraph
-                      text="Tap into the Vast Potential of Dubai Mainland, Establish Your Business with Accessibility, Networking, and Strategic Advantages!"
+                      text="Find  the Big Opportunities in Dubai Mainland! Start Your Business Easily, Connect with Others, and Enjoy the Benefits of a good Location."
                       clasess="text-white z-40 relative text-base"
                     />
                   </div>
@@ -100,9 +100,9 @@ const BusinessSetupCardsSection = () => {
                     className="absolute w-full h-full object-cover rounded-md group-hover:scale-110 transition-all ease-in-out duration-500"
                   />
                   <div className="flex flex-col h-full  items-center justify-end border-4 z-50 p-5">
-                    <h3 className="font-bold text-lg text-primary z-40 relative uppercase">
-                      Serv corps companies house
-                    </h3>
+                    <h4 className="font-bold text-lg text-primary z-40 relative uppercase">
+                      Offshore
+                    </h4>
                     <NormalParagraph
                       text="Dive into Offshore Advantage, Establish Your Business in Dubai's Offshore Zones for Enhanced Privacy, Tax Benefits, and Global Reach!"
                       clasess="text-white z-40 relative text-base"

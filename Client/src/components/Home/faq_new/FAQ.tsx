@@ -12,16 +12,16 @@ const FAQ = ({ bg }: { bg?: string }) => {
     <div className={`${bg ? bg : ""}`}>
       <ContainerWrapper>
         <div className="flex flex-col items-center py-16 gap-5">
-          <h3 className="text-3xl font-semibold">
+          <h3 className="text-4xl font-semibold">
             Frequently Asked <span className="text-tertiary">Questions</span>
           </h3>
           <Accordion type="single" collapsible className="w-full">
             {faq.map((a, i) => (
               <AccordionItem key={i} value={`item-${i}`} className="my-5">
-                <AccordionTrigger className="text-lg font-medium border-l-[3px] px-4 py-2 border-l-[#325AED] group">
+                <AccordionTrigger className="text-lg font-medium border-l-[3px] px-4 py-2 border-l-primary group">
                   {a.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-lg px-4 py-2 border-l-[3px] border-l-[#325AED]">
+                <AccordionContent className="text-lg px-4 py-2 border-l-[3px] border-l-primary">
                   {a.answer}
                 </AccordionContent>
               </AccordionItem>

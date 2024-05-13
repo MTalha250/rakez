@@ -71,7 +71,7 @@ const Hero = () => {
           </span>
         </h1>
         <h2 className="text-center text-2xl md:text-3xl font-semibold mb-12">
-          To Start Your Business in the UAE
+          Easy Steps To Start a Business in the Dubai
         </h2>
         <div className="py-8 md:py-12 flex flex-col md:flex-row">
           <div className="md:w-1/2">

@@ -21,8 +21,8 @@ export default function Slider() {
         }}
         className="z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-bold text-xl md:text-6xl text-center w-2/3 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-          Establishing a Business is Only the Initial Step
+        <motion.p className="font-bold text-xl md:text-6xl text-center w-2/3 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4 tracking-wider">
+          Best Business Setup Company in Dubai
         </motion.p>
         <motion.div className="mb-5 md:mb-10 flex text-base md:text-xl font-bold text-primary mt-3">
           <span className="border-r px-1">Mainland</span>

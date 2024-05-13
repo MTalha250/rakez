@@ -38,15 +38,13 @@ const page = () => {
             <h1
               className={`text-3xl sm:text-5xl text-green text-primary font-semibold drop-shadow-2xl mb-5 md:w-2/3 lg:w-1/2`}
             >
-              Business Setup in Dubai Made Simple with Expert Advice
+              Your Gateway to Easy Business Setup in Dubai
             </h1>
             <h3
               className={`mb-5 text-lg md:text-xl z-[10] font-medium text-neutral-100 md:w-2/3 lg:w-1/2`}
             >
-              Our business setup specialists will guide you through the process,
-              explore the array of business activities available, and provide
-              insights into how you can make the most of your Dubai business
-              venture.
+              Our experts will help you start your company in Dubai, show you
+              different business options, and give tips to succeed.
               <div className="mt-10 w-[300px]">
                 <button className="w-full btn py-3 text-sm rounded-xl bg-c_orangish text-white uppercase">
                   Book a free consultation

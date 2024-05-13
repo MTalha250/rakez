@@ -18,6 +18,7 @@ const promotions = () => {
         image={Offer}
         title="Unlock Your Business Potential in Dubai"
         subTitle="Explore Exclusive Offers for Medyan Free Zone, Dubai Mainland, and Banking Services"
+        bannerClasses="h-[40vh]"
       />
 
       <PromotionsSection />

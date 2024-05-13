@@ -38,17 +38,18 @@ const Ecosystem = () => {
   return (
     <div className="px-7 md:px-16 flex flex-col md:flex-row py-14 md:py-20  md:items-center">
       <div className="md:w-1/2 md:space-y-5">
-        <h1 className="font-bold text-4xl md:text-5xl">
+        <h3 className="font-bold text-4xl md:text-5xl">
           The <br /> Serv Corps Companies House <br />{" "}
           <span className="text-primary">Ecosystem</span>
-        </h1>
+        </h3>
         <p className="text-gray-800 leading-relaxed">
-          Business setup is just the first step towards success. Our full suite
-          of services ensures you have all the tools for your company’s growth.
+          Starting a business is just the first step towards success. With our
+          wide range of services, we make sure you have everything you need to
+          grow your business. We offer tax and accounting help, assistance with
+          hiring, legal support, co-working spaces, and more.
         </p>
         <p className="text-gray-800 leading-relaxed">
-          We’ll guide you through each step, from tax and accounting services to
-          recruitment assistance, legal support, co-working spaces, and more.
+          We'll guide you through every part of your business setup in Dubai.
         </p>
         <Link to="/contact">
           <button className="mt-8 px-6 py-3 bg-primary text-white rounded-lg hover:bg-black transition duration-300">

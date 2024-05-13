@@ -42,6 +42,7 @@ export const ImagesSlider = ({
     const loadPromises = images.map((image) => {
       return new Promise((resolve, reject) => {
         const img = new Image();
+        img.alt = "business setup company in dubai";
         img.src = image;
         img.onload = () => resolve(image);
         img.onerror = reject;

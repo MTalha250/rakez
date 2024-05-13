@@ -9,32 +9,16 @@ export const navLinks = [
     label: "Company Setup",
     children: [
       {
-        href: "/about/ras-al-khaimah",
-        label: "Ras Al Khaimah",
-      },
-      {
-        href: "/about/rakez",
-        label: "RAKEZ",
-      },
-      {
-        href: "/about/zones",
-        label: "Zones",
-      },
-      {
-        href: "/about/leadership",
-        label: "Leadership",
-      },
-      {
-        href: "/about/facilities",
-        label: "Facilities",
-      },
-      {
         href: "/DIFC",
         label: "Dubai Mainland",
       },
       {
         href: "/DIFC",
         label: "Meydan Freezone",
+      },
+      {
+        href: "/about/rakez",
+        label: "RAKEZ",
       },
     ],
   },
@@ -43,10 +27,6 @@ export const navLinks = [
   //   href: "/setupBusiness",
   //   label: "Setup a Business",
   // },
-  {
-    href: "/promotions",
-    label: "Promotions",
-  },
   {
     href: "/business-bank-account-solution-in-dubai",
     label: "Banking",
@@ -62,6 +42,10 @@ export const navLinks = [
   {
     href: "/contact-us",
     label: "Contact Us",
+  },
+  {
+    href: "/promotions",
+    label: "Promotions",
   },
 ];
 
@@ -90,50 +74,35 @@ export const faq = [
   {
     id: 1,
     question:
-      "How can I determine the cost of setting up my business with SCC House?",
+      "What services does Serv Corps Company House offer for business setup in Dubai?",
     answer:
-      "Utilize our user-friendly cost calculator tool on our website to get a detailed breakdown of the expenses associated with establishing your business through SCC House.",
+      "Serv Corps Company House helps with setting up businesses in Dubai. We offer services like helping to register your company, getting the necessary licenses, and giving legal advice. We also help with finding the right location for your business and provide support for visa applications. Our services make it easier for new businesses to start smoothly and comply with all Dubai's laws.",
   },
   {
     id: 2,
-    question:
-      "What services does SCC House offer to assist in the business setup process?",
+    question: "Do I need a local sponsor to start a business in Dubai?",
     answer:
-      "SCC House provides a range of comprehensive business setup services, including a cost calculator, company name check, and various other resources to streamline the process for entrepreneurs.",
+      "Yes, if you want to start a business in Dubai and plan to operate on the mainland, you will need a local sponsor. A local sponsor must be a UAE national and will own 51% of your business. However, if you choose to set up your business in a free zone, you do not need a local sponsor. In free zones, you can own 100% of your company. Each option has its benefits.",
   },
   {
     id: 3,
-    question: "How does the company name check service at SCC House work?",
+    question: "What is the best location for a business setup in Dubai?",
     answer:
-      "Our company name check service allows you to verify the availability of your desired business name, ensuring that it aligns with legal requirements and is unique to your enterprise.",
+      "The best location for setting up a business in Dubai often depends on the type of business you're planning to start. Key locations include: Dubai Internet City: Ideal for tech businesses. Dubai Media City: Perfect for media and marketing companies. Dubai Free Zones: Such as Jebel Ali Free Zone, great for international trade with tax benefits. Downtown Dubai: Best for luxury retail and hospitality businesses. Choosing the right location depends on your business needs, such as proximity to suppliers, target market, and the type of business activity.",
   },
   {
     id: 4,
     question:
-      "Can I get assistance in choosing a suitable business name for my company through SCC House?",
+      "What are the legal requirements for setting up a business in Dubai?",
     answer:
-      "While we don't directly assist in choosing a business name, our company name check service ensures that your preferred name is available and complies with regulations.",
+      "Setting up a business in Dubai involves several legal requirements. First, you need to decide on your business type and choose a suitable legal form, such as a Limited Liability Company (LLC) or a Sole Proprietorship. Next, you must obtain the necessary licenses from the Department of Economic Development (DED). Additionally, you will need to register your business name and ensure it is unique and approved. If your business is in a Free Zone, specific rules apply, including 100% ownership.",
   },
   {
     id: 5,
     question:
-      "What types of businesses can benefit from SCC House services in Dubai?",
+      "Does establishing a business in Dubai require having a physical office?",
     answer:
-      "SCC House caters to a diverse range of businesses, including startups, SMEs, and large enterprises, offering tailored solutions to meet the specific needs of each business type.",
-  },
-  {
-    id: 6,
-    question:
-      "Is there a customer support team available to help with any additional queries I may have?",
-    answer:
-      "Yes, our dedicated customer support team is readily available to assist you with any additional questions or concerns you may have about our services.",
-  },
-  {
-    id: 7,
-    question:
-      "Can I find information on the legal requirements for business setup in Dubai on the SCC House website?",
-    answer:
-      "Absolutely, our website provides comprehensive information on the legal requirements for business setup in Dubai, guiding you through the necessary steps and regulations.",
+      "No, a physical office is not always necessary to launch a business in Dubai. Many free zones in Dubai provide cost-effective options, such as virtual offices or flexi-desks, depending on the nature of your business and its location. Without the requirement for a specific physical office location, these choices offer a business address and access to office facilities. However, depending on their industry or legal needs, some companies can need a physical office. ",
   },
 ];
 

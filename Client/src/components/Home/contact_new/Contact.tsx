@@ -80,23 +80,22 @@ const Contact = () => {
           <div className="flex-1 p-10 font-bold">
             <div className=" flex flex-col gap-5 text-neutral-600">
               <h3 className="text-4xl italic font-extrabold text-secondary">
-                Let's Get
-                <span className="ml-2 text-green">Started</span>
+                Let's Get Started With Us
               </h3>
               <p>
-                Rakez’s mission is to be a one-stop company for all your
-                business needs.
+                Rakez aims to be your all-in-one service for every business
+                need.
               </p>
               <p>
-                Over the last 13 years, our team has helped over 75,000 startups
-                and SMEs expand and grow their business.
+                In the past 13 years, we've helped more than 75,000 startups and
+                small businesses get bigger and better.
               </p>
               <p>
-                We offer tailored solutions to help your business from pre-setup
-                to growth.
+                We provide custom solutions to support your business from the
+                start-up phase to growth.
               </p>
               <p>
-                Contact us to begin your successful business journey in the UAE.
+                Get in touch to start your successful business setup in Dubai.
               </p>
             </div>
           </div>
