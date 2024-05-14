@@ -132,7 +132,7 @@ const Footer = () => {
                   value={formData.fullName}
                   onChange={(e) => handleChange(e, "fullName")}
                   placeholder="Type Full Name"
-                  className="input input-bordered input-md w-full p-2 rounded border border-black"
+                  className="input input-bordered input-md w-full p-2 rounded border border-black text-black"
                 />
               </div>
               <div className="mt-3">
@@ -142,7 +142,7 @@ const Footer = () => {
                   value={formData.email}
                   onChange={(e) => handleChange(e, "email")}
                   placeholder="Type Email"
-                  className="input input-bordered input-md w-full p-2 rounded border border-black"
+                  className="input input-bordered input-md w-full p-2 rounded border border-black text-black"
                 />
               </div>
               <div className="mt-3">
@@ -152,7 +152,7 @@ const Footer = () => {
                     name="phoneNumber"
                     value={formData.phoneNumber}
                     onChange={(e) => handleChange(e, "phoneNumber")}
-                    className="input input-bordered input-md w-full p-2 rounded border border-black"
+                    className="input input-bordered input-md w-full p-2 rounded border border-black text-black"
                     placeholder="Phone Number"
                   />
                 </label>
