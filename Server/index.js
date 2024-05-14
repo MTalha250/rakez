@@ -11,7 +11,7 @@ app.use(cors());
 app.use(cookieParser());
 
 mongoose.set("strictQuery", false);
-mongoose.connect("mongodb://localhost:27017/");
+mongoose.connect("mongodb+srv://talhabinay:talha126@cluster0.9fk5in0.mongodb.net/");
 const db = mongoose.connection;
 
 db.once("open", () => {
