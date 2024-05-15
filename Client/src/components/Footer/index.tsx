@@ -115,7 +115,7 @@ const Footer = () => {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.21579778252!2d55.40136001971798!3d25.162190279357652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f61f96df59e13%3A0xa0a3e59a035fc03c!2sEozmo%20Travel%20%26%20Tourism!5e0!3m2!1sen!2s!4v1713603626498!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3611.2145033114557!2d55.4013152!3d25.162234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e51c54484b718d9%3A0x6e006b2065a29f57!2sSERV%20CORPS%20COMPANIES%20HOUSE!5e0!3m2!1sen!2s!4v1715780180921!5m2!1sen!2s"
           className="w-[400px] h-auto"
           loading="lazy"
         ></iframe>
